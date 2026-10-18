@@ -106,6 +106,14 @@ export async function setFavorite(db: D1Like, userId: string, key: string, value
 export async function grantPacks(db: D1Like, userId: string, n: number) {
   await db.prepare('UPDATE vaults SET packs = packs + ?2 WHERE user_id = ?1').bind(userId, Math.max(0, Math.floor(n))).run();
 }
+/** Private-site testing purchase: one no-cost featured pack with a server-validated theme. */
+export async function grantTestPack(db: D1Like, userId: string, theme: string) {
+  if (!['midnight-run', 'finals-gold', 'redline-rivalry'].includes(theme)) return false;
+  const row = await getRow(db, userId), themes = JSON.parse(row.pack_themes) as string[];
+  themes.push(theme);
+  await db.prepare('UPDATE vaults SET packs = packs + 1, pack_themes = ?2 WHERE user_id = ?1').bind(userId, JSON.stringify(themes)).run();
+  return true;
+}
 /** One finished game: a pack every third game, and season XP. */
 export async function grantGame(db: D1Like, userId: string, today: string) {
   const row = await getRow(db, userId), matches = row.matches + 1, granted = matches % 3 === 0 ? 1 : 0;

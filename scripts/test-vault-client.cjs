@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert'),root=require('path').resolve(__dirname,'..')+'/';
 const ls={};let calls=[],local=[],alerts=[],posts=[],get={status:401,body:{error:'Sign in'}},post={};
 const players=[{id:'a',n:'Alpha Guard',p:'G',r:'Floor General',a:80},{id:'b',n:'Beta Big',p:'B',r:'Rim Protector',a:80}];
-const ctx=vm.createContext({localStorage:{getItem:k=>ls[k]??null,setItem:(k,v)=>{ls[k]=v}},collectionKey:'col',players,cardAttributes:p=>[p.a],S:{screen:'home'},PR:{phase:'idle'},packBusy:false,
+const ctx=vm.createContext({localStorage:{getItem:k=>ls[k]??null,setItem:(k,v)=>{ls[k]=v}},collectionKey:'col',players,cardAttributes:p=>[p.a],S:{screen:'home'},PR:{phase:'idle',shopBusy:false},prFeaturedDrop:()=>({id:'midnight-run'}),prSound:()=>{},packBusy:false,
  alert:m=>alerts.push(m),circuitPost:(...a)=>calls.push(['post',...a]),saveAll:()=>calls.push('save'),packRoom:()=>calls.push('packRoom'),rewards:()=>calls.push('rewards'),
  fetch:async(u,o)=>{if(o&&o.method==='POST'){const b=JSON.parse(o.body);posts.push(b);const r=post[b.action];return {ok:r.ok!==false,status:r.status||200,json:async()=>r.body}}return {ok:get.status===200,status:get.status,json:async()=>get.body}},
  Promise,JSON,Object,Array,Error,Math,Date,Set,Number,String});
@@ -41,7 +41,7 @@ const vault=(o={})=>({packs:3,matches:7,packThemes:[],last:null,cards:[{cardKey:
  post.goal={body:{granted:1,vault:vault({packs:6})}};assert.equal(await run(`rtClaimGoal('guards5')`),1);post.level={body:{granted:0,vault:vault({packs:6})}};assert.equal(await run('rtClaimLevel(2)'),0);
  assert(posts.some(p=>p.action==='goal'&&p.id==='guards5')&&posts.some(p=>p.action==='level'&&p.n===2));
  run(`var __c={season:null};rtXp(__c,20)`);assert.equal(run('__c.season'),null,'local XP is off when the server holds it');
- local=[];await run('purchaseFeaturedPack()');assert.equal(local.length,0);assert(/not available on coach accounts/.test(alerts.at(-1)),'shop is paused with a clear message');
+ local=[];post['test-purchase']={body:{vault:vault({packs:7,packThemes:['midnight-run']})}};await run('purchaseFeaturedPack()');assert.equal(local.length,0,'account testing purchase does not use the phone-only shop');assert(posts.some(p=>p.action==='test-purchase'&&p.theme==='midnight-run'),'account testing purchase is validated by the server');assert.equal(JSON.parse(ls.col).packs,7);assert.deepEqual(JSON.parse(ls.col).packThemes,['midnight-run'],'testing purchase refreshes the account vault');
  get={status:401,body:{error:'Sign in'}};await run('vaultHydrate()');assert.equal(run('aauVault.enabled'),false,'signing out turns it off');
- console.log('PASS: signed-out stays local; signed-in mirrors the server vault with a one-time local backup; opens, collects, favorites, daily, goals, and levels go to the server; reveal progress survives refresh; shop paused with a message.');
+ console.log('PASS: signed-out stays local; signed-in mirrors the server vault with a one-time local backup; opens, collects, favorites, daily, goals, levels, and testing pack purchases go to the server; reveal progress survives refresh.');
 })().catch(e=>{console.error(e);process.exit(1)});

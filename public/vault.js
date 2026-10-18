@@ -33,8 +33,8 @@ if(typeof rtClaimGoal==='function'){const local=rtClaimGoal;
 if(typeof rtClaimLevel==='function'){const local=rtClaimLevel;
  rtClaimLevel=async function(n){if(!aauVault.enabled)return local(n);const d=await vaultCall('POST',{action:'level',n});await vaultApply(d.vault);return d.granted||0}}
 if(typeof rtXp==='function'){const local=rtXp;rtXp=function(c,n){if(aauVault.enabled)return;return local(c,n)}}
-// Director Points live on the phone, so buying packs with them is not safe on accounts yet.
+// Account-backed testing purchases are granted by the server so the phone cannot edit the vault.
 if(typeof purchaseFeaturedPack==='function'){const local=purchaseFeaturedPack;
- purchaseFeaturedPack=async function(){if(aauVault.enabled){alert('Pack shop purchases are not available on coach accounts yet. Earn packs from games, daily rewards, goals, and the weekly leaderboard.');return}return local()}}
+ purchaseFeaturedPack=async function(){if(!aauVault.enabled)return local();if(PR.shopBusy)return;const drop=prFeaturedDrop();PR.shopBusy=true;packRoom();try{const d=await vaultCall('POST',{action:'test-purchase',theme:drop.id});await vaultApply(d.vault);if(typeof prSound==='function')prSound('foil');}catch(e){alert(e.message)}finally{PR.shopBusy=false;packRoom()}}}
 if(typeof document!=='undefined'&&document.addEventListener)document.addEventListener('visibilitychange',()=>{if(!document.hidden&&aauVault.enabled)vaultHydrate()});
 vaultHydrate();

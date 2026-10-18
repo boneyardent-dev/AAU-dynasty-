@@ -1,6 +1,6 @@
 import { getCurrentUser } from '../../session';
 import { ROSTER, vaultDb } from '../../vault-db';
-import { claimDaily, claimGoal, claimLevel, collectBatch, ensureVault, openPack, setFavorite, vaultState } from '../../../lib/vault-core';
+import { claimDaily, claimGoal, claimLevel, collectBatch, ensureVault, grantTestPack, openPack, setFavorite, vaultState } from '../../../lib/vault-core';
 import { pacificDay } from '../../../lib/leaderboard';
 const H = { 'Cache-Control': 'no-store' };
 const json = (b: unknown, status = 200) => Response.json(b, { status, headers: H });
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   if (!user) return json({ error: 'Sign in to keep your packs on your account.' }, 401);
   const origin = request.headers.get('origin');
   if (origin) { try { if (new URL(origin).host !== request.headers.get('host')) return json({ error: 'Not allowed.' }, 403); } catch { return json({ error: 'Not allowed.' }, 403); } }
-  let body: { action?: unknown; id?: unknown; n?: unknown; cardKey?: unknown; value?: unknown };
+  let body: { action?: unknown; id?: unknown; n?: unknown; cardKey?: unknown; value?: unknown; theme?: unknown };
   try { body = await request.json(); } catch { return json({ error: 'Invalid request.' }, 400); }
   try {
     const db = await vaultDb(), now = new Date(), today = pacificDay(now), uid = user.userId;
@@ -38,6 +38,9 @@ export async function POST(request: Request) {
       case 'daily': extra = await claimDaily(db, uid, today); break;
       case 'goal': extra = await claimGoal(db, uid, String(body.id), ROSTER, today); break;
       case 'level': extra = await claimLevel(db, uid, Number(body.n), today); break;
+      case 'test-purchase':
+        if (!(await grantTestPack(db, uid, String(body.theme)))) return json({ error: 'That featured pack is unavailable.' }, 400);
+        break;
       default: return json({ error: 'Unknown request.' }, 400);
     }
     return json({ ok: true, ...extra, vault: await vaultState(db, uid) });
