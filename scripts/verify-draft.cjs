@@ -20,6 +20,7 @@ if(require.main===module)(async()=>{
  for(let round=0;round<8;round++){
   assert.equal(run(t.context,'S.screen'),'draft');assert.equal(run(t.context,'S.pick.length'),round);
   const ids=json(t.context,'S.draft.offers');assert.equal(ids.length,3);assert.equal(new Set(ids).size,3);
+  for(const id of ids){const portrait=run(t.context,`playerPortrait(player('${id}'),true)`);assert(/class="(generated-player-avatar|circuit-portrait|player-photo-frame)/.test(portrait),'every draft offer has a visual avatar');}
   for(const id of ids){assert(!offered.has(id));offered.add(id);assert(!json(t.context,'S.pick').includes(id));}
   if(round===3){
    await run(t.context,'syncAccountSave()');pending=JSON.stringify(ids);
@@ -27,6 +28,7 @@ if(require.main===module)(async()=>{
    assert.equal(JSON.stringify(json(next.context,'S.draft.offers')),pending);assert.equal(run(next.context,'S.pick.length'),3);t=next;
   }
   const id=ids[round%3];run(t.context,`pickDraftPlayer('${id}')`);assert.equal(run(t.context,'S.pick.length'),round+1);
+  const teamPanel=run(t.context,'draftedTeamPanel()');assert.equal((teamPanel.match(/class="draft-mini-avatar"/g)||[]).length,round+1,'every drafted player appears with an avatar in the team preview');
   run(t.context,`pickDraftPlayer('${id}')`);assert.equal(run(t.context,'S.pick.length'),round+1,'stale click must not take another player');
  }
  assert.equal(offered.size,24);assert.equal(run(t.context,'S.screen'),'roster');assert.equal(run(t.context,'S.five.length'),5);

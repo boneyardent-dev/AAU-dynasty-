@@ -5,7 +5,8 @@ assert.deepEqual(players.map(p=>p.artPanel).sort(),[1,2,3,4,5,6,7],'each origina
 assert(players.every(p=>p.isFictional&&p.gameRatings&&p.signatureAbility),'each original has fictional status, ratings and a signature ability');
 assert(fs.existsSync(root+'/public/originals/circuit-originals-sheet.png'),'character art sheet is shipped with the app');
 const html=fs.readFileSync(root+'/game.html','utf8'),pack=fs.readFileSync(root+'/public/pack-premium.js','utf8'),css=fs.readFileSync(root+'/public/pack-premium.css','utf8');
-assert(/c\.originalSeries==='circuit-originals-v1'&&c\.artPanel/.test(html),'card portrait renderer uses the character panel');
+assert(/c\?\.originalSeries==='circuit-originals-v1'&&c\.artPanel/.test(html),'card portrait renderer uses the character panel');
+assert(/function generatedPlayerAvatar\(p\)/.test(html)&&/Game-generated basketball avatar/.test(html),'players without supplied art receive a personalized game avatar');
 assert(/fictionalPool=players\.filter\(p=>p\.catalog\?\.originalSeries==='circuit-originals-v1'\)/.test(pack),'pack pulls use the Circuit Originals cast');
 assert(css.includes('/originals/circuit-originals-sheet.png'),'card portraits use the generated art');
 console.log('PASS: seven fictional characters, seven distinct art panels, pack-only pulls, and card art integration.');
