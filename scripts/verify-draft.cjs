@@ -15,7 +15,12 @@ if(require.main===module)(async()=>{
  let t=create();
  const existingCollection={v:1,packs:4,inventory:{'marcus:silver-foil:Rare':{playerId:'marcus',edition:'silver-foil',rarity:'Rare',quantity:2,favorite:true,attributes:[94,78,76,77,83,95]}},pulls:[],last:null,matches:0};
  t.storage.set('aau82.collection.v1',JSON.stringify(existingCollection));
- await run(t.context,'bootCatalog()');run(t.context,'chooseTeam(0);roster()');
+ await run(t.context,'bootCatalog()');
+ assert(run(t.context,"playerPortrait(player('eli')).includes('class=\"generated-player-avatar\"')"),'the original Eli Navarro test player receives a styled portrait');
+ assert(run(t.context,"playerPortrait(player('malik')).includes('class=\"generated-player-avatar\"')"),'the original Malik Carter test player receives a styled portrait');
+ assert(run(t.context,"playerPortrait(player('dyn-2027-jalen-cross')).includes('/cards/dyn-2027-jalen-cross.webp')"),'Jalen Cross keeps his existing character art');
+ assert(run(t.context,"playerPortrait(player('circuit-2027-owen')).includes('circuit-portrait')"),'Owen keeps his Circuit Originals art');
+ run(t.context,'chooseTeam(0);roster()');
  const offered=new Set();let pending;
  for(let round=0;round<8;round++){
   assert.equal(run(t.context,'S.screen'),'draft');assert.equal(run(t.context,'S.pick.length'),round);
