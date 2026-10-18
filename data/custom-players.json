@@ -1,0 +1,142 @@
+[
+ {
+  "id": "custom-tiger-stancil",
+  "name": "Tiger Stancil",
+  "classYear": 2032,
+  "position": "PG",
+  "school": "Not reported",
+  "hometown": null,
+  "height": "5-4",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Custom"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "archetype": "Playmaking Guard",
+  "signatureAbility": "To be assigned",
+  "bio": "Added by the program director.",
+  "gameRatings": {
+   "Ball Handling": 93,
+   "Athleticism": 84,
+   "Shooting": 88,
+   "Defense": 80,
+   "Bag Work": 94,
+   "Basketball IQ": 94
+  },
+  "ratingsMethod": "Provisional game ratings, not published scouting grades. Profile details supplied by the coach; measurements may have changed.",
+  "photo": null
+ },
+ {
+  "id": "custom-harley-hudson",
+  "name": "Harley Hudson",
+  "classYear": 0,
+  "position": "C",
+  "school": "Not reported",
+  "hometown": null,
+  "height": "6-3",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Custom"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "archetype": "Athletic Big",
+  "signatureAbility": "To be assigned",
+  "bio": "Added by the program director.",
+  "gameRatings": {
+   "Ball Handling": 76,
+   "Athleticism": 94,
+   "Shooting": 73,
+   "Defense": 89,
+   "Bag Work": 83,
+   "Basketball IQ": 85
+  },
+  "ratingsMethod": "Provisional game ratings, not published scouting grades. Profile details supplied by the coach; measurements may have changed.",
+  "photo": null
+ },
+ {
+  "id": "custom-donovan-price",
+  "name": "Donovan Price",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Not reported",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Custom"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Added by the program director.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings, not published scouting grades. Position is a temporary gameplay assignment pending coach confirmation.",
+  "photo": null
+ },
+ {
+  "id": "custom-derrick-tarver-jr",
+  "name": "Derrick Tarver Jr.",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Not reported",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Custom"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Added by the program director.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings, not published scouting grades. Position is a temporary gameplay assignment pending coach confirmation.",
+  "photo": null
+ }
+]

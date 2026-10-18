@@ -1,0 +1,50 @@
+/* Holographic player card drawn in code over optional art in /cards. Tiers: t1 purple-teal, t2 pink-coral, t3 gold-blue. */
+.aau-t1{--a:#8a6bff;--b:#31d6c8;--dark:#2a1d63;--glow:#cdbfff;--ribbon:#7a5cf0}
+.aau-t2{--a:#ff6fa8;--b:#ffb36b;--dark:#5f2147;--glow:#ffd0e2;--ribbon:#12a89d}
+.aau-t3{--a:#ffd45c;--b:#5ec8ff;--dark:#13427f;--glow:#fff0b3;--ribbon:#ffc93c}
+.aau-card{width:100%;max-width:300px;margin:0 auto;aspect-ratio:8/15;position:relative;perspective:900px;container-type:inline-size;cursor:pointer;touch-action:pan-y;-webkit-tap-highlight-color:transparent;color:#fff;text-align:left}
+.aau-card:focus-visible{outline:3px solid var(--a);outline-offset:4px;border-radius:7cqw}
+.aau-tilt{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s ease-out}
+.aau-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,.7,.2,1)}.aau-card.flipped .aau-inner{transform:rotateY(180deg)}
+.aau-face{position:absolute;inset:0;border-radius:6cqw;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;box-shadow:0 18px 40px -16px rgba(20,10,60,.55)}
+.aau-back{transform:rotateY(180deg);background:linear-gradient(160deg,var(--dark),#0c0a24);padding:8cqw 7cqw;display:flex;flex-direction:column}
+.aau-foil{position:absolute;inset:0;background:linear-gradient(135deg,var(--a),var(--b) 45%,var(--glow) 55%,var(--a));background-size:220% 220%;animation:aau-foil 7s linear infinite}
+@keyframes aau-foil{to{background-position:220% 220%}}
+.aau-art{position:absolute;inset:3cqw;border-radius:4cqw;overflow:hidden;background:radial-gradient(circle at 50% 38%,var(--glow),var(--a) 40%,var(--dark) 100%)}
+.aau-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.aau-mono{position:absolute;inset:0;display:grid;place-items:center;padding-bottom:30cqw;font:400 46cqw/1 "Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;color:rgba(255,255,255,.88);-webkit-text-stroke:1cqw rgba(0,0,0,.18)}
+.aau-art small{position:absolute;left:0;right:0;top:50cqw;text-align:center;font:italic 800 5cqw "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.2em;color:rgba(255,255,255,.8)}
+.aau-art.has-img .aau-mono,.aau-art.has-img small{display:none}
+.aau-holo{position:absolute;inset:0;background:linear-gradient(115deg,transparent 20%,rgba(255,120,200,.35) 36%,rgba(120,255,230,.35) 48%,rgba(255,240,130,.35) 60%,transparent 76%);background-size:250% 250%;background-position:var(--mx,50%) var(--my,50%);mix-blend-mode:color-dodge;opacity:.5;pointer-events:none}
+.aau-glare{position:absolute;inset:0;background:radial-gradient(circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.45),transparent 42%);mix-blend-mode:overlay;pointer-events:none}
+.aau-badge{position:absolute;left:3.2cqw;top:3.2cqw;width:31cqw;height:35cqw;background:linear-gradient(160deg,#fff,var(--glow));clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%);filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
+.aau-badge:before{content:"";position:absolute;inset:1.6cqw;background:linear-gradient(170deg,var(--a),var(--dark));clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%)}
+.aau-badge b{position:absolute;left:0;right:0;top:3cqw;text-align:center;font:400 17cqw/1 "Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;color:#fff;-webkit-text-stroke:.6cqw var(--dark);paint-order:stroke fill}
+.aau-badge span{position:absolute;left:0;right:0;top:20.5cqw;text-align:center;font:italic 800 6.6cqw/1 "Barlow Condensed","Arial Narrow",sans-serif;color:#fff;letter-spacing:.06em}
+.aau-crown{position:absolute;width:7cqw;right:3cqw;top:3cqw;fill:#ffd45c;filter:drop-shadow(0 .5cqw 0 rgba(0,0,0,.35))}
+.aau-plate{position:absolute;left:3cqw;right:3cqw;bottom:3cqw;height:44cqw;border-radius:0 0 4cqw 4cqw;background:linear-gradient(180deg,var(--dark),#0c0a24);clip-path:polygon(0 15%,100% 0,100% 100%,0 100%);padding:15cqw 3cqw 0;text-align:center}
+.aau-nm{font:400 var(--nfs,12.5cqw)/1 "Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;text-transform:uppercase;background:linear-gradient(180deg,#fff 30%,var(--glow));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 .8cqw 0 var(--a));white-space:nowrap}
+.aau-rib{display:inline-block;margin-top:2.6cqw;padding:1.2cqw 6cqw;background:var(--ribbon);transform:skewX(-14deg);box-shadow:0 .8cqw 0 rgba(0,0,0,.3)}
+.aau-rib i{display:block;transform:skewX(14deg);font:italic 800 6.2cqw/1.1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.12em;color:#fff;text-transform:uppercase;white-space:nowrap}
+.aau-t3 .aau-rib i{color:#13427f}
+.aau-back h3{margin:0;font:400 10.5cqw/1 "Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;text-transform:uppercase;color:#fff}
+.aau-back .aau-sub{font-size:5.2cqw;color:var(--glow);margin:1.6cqw 0 4cqw}
+.aau-stat{margin:2.6cqw 0}.aau-stat div{display:flex;justify-content:space-between;font-size:5.2cqw}
+.aau-stat i{display:block;height:2.2cqw;border-radius:2cqw;background:rgba(255,255,255,.18);margin-top:1cqw;overflow:hidden}.aau-stat u{display:block;height:100%;background:linear-gradient(90deg,var(--b),var(--a))}
+.aau-six{display:grid;grid-template-columns:1fr 1fr;gap:1.6cqw 5cqw;margin-top:3cqw;font-size:4.6cqw}.aau-six span{display:flex;justify-content:space-between;color:var(--glow)}.aau-six b{color:#fff}
+.aau-back .aau-foot{margin-top:auto;font-size:4cqw;color:var(--glow);opacity:.85}
+.aau-back svg{position:absolute;right:-8cqw;bottom:-6cqw;width:60cqw;fill:#fff;opacity:.07}
+.silver-card.aau-wrap{background:none!important;border:0!important;box-shadow:none!important;padding:0!important}
+.aau-chips{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0}.aau-chips button{font:inherit;font-weight:700;font-size:13px;border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:6px 12px;cursor:pointer}.aau-chips button[aria-pressed=true]{border-color:var(--lime);color:var(--lime)}
+.fictional-portrait{position:relative;overflow:hidden}.fictional-portrait .aau-img{z-index:1}.fictional-portrait.has-img span,.fictional-portrait.has-img small{display:none}
+@media (prefers-reduced-motion:reduce){.aau-foil{animation:none}.aau-tilt,.aau-inner{transition:none}}
+
+/* Rarity palettes (Common, Uncommon, Rare, Epic, Legendary, Mythic) */
+.aau-r-common{--a:#8da0b3;--b:#d5dde5;--dark:#26303b;--glow:#e6edf3;--ribbon:#5f7388}
+.aau-r-uncommon{--a:#3fbf7f;--b:#b7f0cf;--dark:#12402b;--glow:#d9f8e6;--ribbon:#2a9c64}
+.aau-r-rare{--a:#5aa7ff;--b:#31d6c8;--dark:#143a68;--glow:#cfe6ff;--ribbon:#3c82e0}
+.aau-r-epic{--a:#a56bff;--b:#ff6fd0;--dark:#3a1d6b;--glow:#e3ccff;--ribbon:#8450e8}
+.aau-r-legendary{--a:#ffc83d;--b:#ff9b4a;--dark:#5a3a0a;--glow:#fff0b3;--ribbon:#ffc93c}
+.aau-r-legendary .aau-rib i{color:#5a3a0a}
+.aau-r-mythic{--a:#ff5fc8;--b:#7a6bff;--dark:#4a1450;--glow:#ffd0f0;--ribbon:#e0409f}
+.aau-rar{position:absolute;right:3.4cqw;top:12cqw;padding:.8cqw 3cqw;border-radius:99cqw;background:rgba(10,8,30,.62);border:.5cqw solid var(--glow);font:italic 800 4.4cqw/1.1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}

@@ -1,0 +1,11 @@
+[
+  {"id":"floor-general","name":"Floor General","role":"G","icon":"🧠","strength":"Creates advantages, controls tempo, and gets teammates clean looks.","tradeoff":"Needs finishing and shooting around them.","weights":{"Ball Handling":0.4,"Basketball IQ":0.6}},
+  {"id":"shot-creator","name":"Shot Creator","role":"G","icon":"🔥","strength":"Breaks down defenders and creates a shot when the offense stalls.","tradeoff":"Needs defensive cover and teammates who keep the ball moving.","weights":{"Bag Work":0.6,"Athleticism":0.4}},
+  {"id":"sharpshooter","name":"Sharpshooter","role":"G","icon":"🎯","strength":"Stretches the floor and punishes help with quick-release shooting.","tradeoff":"Needs a playmaker to create space and find them.","weights":{"Shooting":0.85,"Basketball IQ":0.15}},
+  {"id":"three-and-d","name":"3-and-D Wing","role":"W","icon":"🛡️","strength":"Spaces the floor and takes tough perimeter defensive assignments.","tradeoff":"Less suited to carrying the offense as a primary creator.","weights":{"Shooting":0.55,"Defense":0.45}},
+  {"id":"two-way-wing","name":"Two-Way Wing","role":"W","icon":"⚖️","strength":"Connects the offense and brings versatile perimeter defense.","tradeoff":"A balanced role rather than a specialist who dominates one skill.","weights":{"Defense":0.6,"Basketball IQ":0.4}},
+  {"id":"slasher","name":"Slasher","role":"W","icon":"⚡","strength":"Attacks gaps and runs the floor to pressure the rim.","tradeoff":"Needs spacing; a crowded paint limits driving lanes.","weights":{"Athleticism":0.7,"Ball Handling":0.3}},
+  {"id":"rim-protector","name":"Rim Protector","role":"B","icon":"🧱","strength":"Anchors the paint and supports a defense-first lineup.","tradeoff":"Pair with perimeter shooting to keep the floor open.","weights":{"Defense":0.75,"Basketball IQ":0.25}},
+  {"id":"glass-cleaner","name":"Glass Cleaner","role":"B","icon":"💪","strength":"A hustle-big role built around athleticism and interior defense.","tradeoff":"Needs guards to create offense; rebounding is a projected role, not a sourced stat.","weights":{"Athleticism":0.6,"Defense":0.4}},
+  {"id":"stretch-big","name":"Stretch Big","role":"B","icon":"📡","strength":"Pulls a defender away from the rim and opens driving lanes.","tradeoff":"Pair with an interior defender against stronger paint teams.","weights":{"Shooting":0.85,"Basketball IQ":0.15}}
+]

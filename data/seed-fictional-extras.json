@@ -1,0 +1,160 @@
+[
+ {
+  "id": "fictional-2027-kairo-bell",
+  "name": "Kairo Bell",
+  "classYear": 2027,
+  "position": "PG",
+  "school": "West Ridge Academy (Phoenix, AZ)",
+  "hometown": "Phoenix, AZ",
+  "height": "6-1",
+  "weight": 172,
+  "commitment": {
+   "status": "None",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Fictional"
+  ],
+  "isFictional": true,
+  "archetype": "Tempo Controller",
+  "signatureAbility": "Green-Light Conductor",
+  "bio": "A downhill floor general who changes pace, sees the second defender early, and turns pressure into clean looks for teammates.",
+  "gameplayArchetype": "floor-general",
+  "gameRatings": {
+   "Ball Handling": 93,
+   "Athleticism": 89,
+   "Shooting": 83,
+   "Defense": 78,
+   "Bag Work": 94,
+   "Basketball IQ": 95
+  },
+  "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+  "photo": null
+ },
+ {
+  "id": "fictional-2027-micah-sato",
+  "name": "Micah Sato",
+  "classYear": 2027,
+  "position": "SF",
+  "school": "NorCal Elevate Prep (Sacramento, CA)",
+  "hometown": "Elk Grove, CA",
+  "height": "6-6",
+  "weight": 191,
+  "commitment": {
+   "status": "None",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Fictional"
+  ],
+  "isFictional": true,
+  "archetype": "Three-Level Shot Maker",
+  "signatureAbility": "Orbit Pull-Up",
+  "bio": "A long wing with a smooth pull-up, fast feet into the catch, and enough handle to punish a hard closeout.",
+  "gameplayArchetype": "three-and-d",
+  "gameRatings": {
+   "Ball Handling": 86,
+   "Athleticism": 88,
+   "Shooting": 94,
+   "Defense": 82,
+   "Bag Work": 91,
+   "Basketball IQ": 87
+  },
+  "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+  "photo": null
+ },
+ {
+  "id": "fictional-2027-darius-okafor",
+  "name": "Darius Okafor",
+  "classYear": 2027,
+  "position": "C",
+  "school": "Harbor Point Academy (Oakland, CA)",
+  "hometown": "Oakland, CA",
+  "height": "6-10",
+  "weight": 236,
+  "commitment": {
+   "status": "None",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Fictional"
+  ],
+  "isFictional": true,
+  "archetype": "Rim-Running Anchor",
+  "signatureAbility": "No-Fly Zone",
+  "bio": "A sprinting rim protector who runs the floor, cleans the glass, and makes every paint touch feel crowded.",
+  "gameplayArchetype": "rim-protector",
+  "gameRatings": {
+   "Ball Handling": 73,
+   "Athleticism": 92,
+   "Shooting": 68,
+   "Defense": 96,
+   "Bag Work": 88,
+   "Basketball IQ": 89
+  },
+  "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+  "photo": null
+ },
+ {
+  "id": "dyn-2027-jalen-cross",
+  "name": "Jalen Cross",
+  "classYear": 2027,
+  "position": "PG",
+  "school": "Crown Collegiate Prep",
+  "hometown": "Oakland, CA",
+  "height": "6-1",
+  "weight": 175,
+  "commitment": {
+   "status": "None",
+   "school": null,
+   "date": null
+  },
+  "rankings": [
+   {
+    "source": "Dynasty Scouts",
+    "rank": 1,
+    "rating": 99,
+    "stars": 5,
+    "reportedVia": "in-game"
+   }
+  ],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Dynasty Scouts"
+  ],
+  "isCustom": false,
+  "isFictional": true,
+  "archetype": "Floor General",
+  "bio": "A fearless floor general who plays with joy. Sample card for the AAU Dynasty art style.",
+  "gameRatings": {
+   "Athleticism": 88,
+   "Bag Work": 87,
+   "Ball Handling": 94,
+   "Basketball IQ": 90,
+   "Defense": 80,
+   "Shooting": 88
+  },
+  "ratingsMethod": "Generated for AAU Dynasty. Fictional player; ratings are game values.",
+  "avatar": {
+   "initials": "JC",
+   "number": 2,
+   "hue": 190
+  },
+  "art": {
+   "titles": [
+    "After Hours",
+    "Concrete Royalty",
+    "Arrival"
+   ]
+  }
+ }
+]

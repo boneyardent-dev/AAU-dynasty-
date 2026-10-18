@@ -1,0 +1,62 @@
+[
+ {
+  "id": "marcus",
+  "r": "Floor General",
+  "p": "G"
+ },
+ {
+  "id": "eli",
+  "r": "Deadeye Shooter",
+  "p": "G"
+ },
+ {
+  "id": "jaylen",
+  "r": "Two-Way Guard",
+  "p": "G/W"
+ },
+ {
+  "id": "noah",
+  "r": "Change-of-Pace Guard",
+  "p": "G"
+ },
+ {
+  "id": "darius",
+  "r": "3-and-D Wing",
+  "p": "W"
+ },
+ {
+  "id": "malik",
+  "r": "Shot-Creating Wing",
+  "p": "W"
+ },
+ {
+  "id": "andre",
+  "r": "Utility Wing",
+  "p": "W/B"
+ },
+ {
+  "id": "ty",
+  "r": "Rim Runner",
+  "p": "B"
+ },
+ {
+  "id": "mason",
+  "r": "Stretch Big",
+  "p": "B/W"
+ },
+ {
+  "id": "cam",
+  "r": "Paint Anchor",
+  "p": "B"
+ },
+ {
+  "id": "trey",
+  "r": "Energy Defender",
+  "p": "W"
+ },
+ {
+  "id": "lucas",
+  "r": "Skilled Connector",
+  "p": "G/W"
+ }
+]

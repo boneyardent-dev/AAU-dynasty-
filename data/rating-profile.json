@@ -1,0 +1,91 @@
+{
+ "tiers": [
+  {
+   "upTo": 0.06,
+   "mean": 90.74,
+   "std": 2.15
+  },
+  {
+   "upTo": 0.17,
+   "mean": 88.96,
+   "std": 2.15
+  },
+  {
+   "upTo": 0.39,
+   "mean": 86.67,
+   "std": 3.95
+  },
+  {
+   "upTo": 0.67,
+   "mean": 81.98,
+   "std": 3.94
+  },
+  {
+   "upTo": 1.0,
+   "mean": 77.91,
+   "std": 3.86
+  }
+ ],
+ "offsets": {
+  "PG": {
+   "Athleticism": -1.97,
+   "Bag Work": 2.61,
+   "Ball Handling": 3.84,
+   "Basketball IQ": -0.16,
+   "Defense": -1.97,
+   "Shooting": -2.35
+  },
+  "SG": {
+   "Athleticism": -3.0,
+   "Bag Work": 2.0,
+   "Ball Handling": 3.0,
+   "Basketball IQ": -1.0,
+   "Defense": -3.0,
+   "Shooting": 2.0
+  },
+  "CG": {
+   "Athleticism": -1.53,
+   "Bag Work": 1.99,
+   "Ball Handling": 4.36,
+   "Basketball IQ": -0.27,
+   "Defense": -1.53,
+   "Shooting": -3.01
+  },
+  "SF": {
+   "Athleticism": 1.89,
+   "Bag Work": -2.84,
+   "Ball Handling": -7.11,
+   "Basketball IQ": 4.02,
+   "Defense": 1.89,
+   "Shooting": 2.16
+  },
+  "PF": {
+   "Athleticism": 1.11,
+   "Bag Work": -3.75,
+   "Ball Handling": -7.89,
+   "Basketball IQ": 3.18,
+   "Defense": 6.11,
+   "Shooting": 1.25
+  },
+  "C": {
+   "Athleticism": 2.63,
+   "Bag Work": -2.29,
+   "Ball Handling": -6.37,
+   "Basketball IQ": 4.67,
+   "Defense": 7.63,
+   "Shooting": -6.29
+  }
+ },
+ "positions": {
+  "PG": 26,
+  "PF": 29,
+  "SF": 47,
+  "CG": 27,
+  "C": 26,
+  "SG": 25
+ },
+ "stars": {
+  "five": 0.1016949152542373,
+  "fourPlus": 0.9096045197740112
+ }
+}
