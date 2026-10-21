@@ -22,6 +22,12 @@ await V.collectBatch(db, 'u1'); assert.equal((await V.vaultState(db, 'u1')).last
 assert.equal((await V.openPack(db, 'u1', roster)).reason, 'no-packs', 'no packs, no draw');
 await V.ensureVault(db, 'shop', now); assert.equal(await V.grantTestPack(db, 'shop', 'midnight-run'), true); let shop = await V.vaultState(db, 'shop'); assert.equal(shop.packs, 2); assert.deepEqual(shop.packThemes, ['midnight-run'], 'testing purchase grants a themed pack on the server');
 assert.equal(await V.grantTestPack(db, 'shop', 'not-a-theme'), false); shop = await V.vaultState(db, 'shop'); assert.equal(shop.packs, 2, 'invalid test themes grant nothing');
+const concreteRoster = [...Array(6)].map((_, i) => ({ id: 'concrete-' + i, p: 'G', r: 'Concrete', series: 'concrete-royalty-v1' }));
+await V.ensureVault(db, 'concrete', now); assert.equal(await V.grantTestPack(db, 'concrete', 'concrete-royalty'), true, 'Concrete Royalty is an approved featured theme');
+const concreteOpen = await V.openPack(db, 'concrete', [...roster, ...concreteRoster], () => 0);
+assert(concreteOpen.ok); assert.equal(concreteOpen.batch.themeId, 'concrete-royalty');
+assert.equal(new Set(concreteOpen.batch.cards.map((c) => c.playerId)).size, 5, 'the themed server draw contains five unique players');
+assert(concreteOpen.batch.cards.every((c) => c.playerId.startsWith('concrete-')), 'Concrete Royalty packs draw only from their six-player roster');
 // rarity odds match the game's table, and special editions follow rarity
 const counts = {}; const r2 = (() => { const a = new Uint32Array(1); return () => (crypto.getRandomValues(a), a[0] / 4294967296); })();
 for (let i = 0; i < 40000; i++) { const k = V.rarityFor(r2()); counts[k] = (counts[k] || 0) + 1; }

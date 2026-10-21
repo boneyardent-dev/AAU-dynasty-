@@ -3,7 +3,7 @@
 // Pure logic against a D1-like interface so it can be tested in Node.
 import type { D1Like } from './auth-core';
 
-export type RosterPlayer = { id: string; p: string; r: string };
+export type RosterPlayer = { id: string; p: string; r: string; series?: string };
 export const RARITY_CUTS: [number, string][] = [[0.55, 'Common'], [0.8, 'Uncommon'], [0.92, 'Rare'], [0.98, 'Epic'], [0.997, 'Legendary']];
 export const SPECIAL: Record<string, string> = { Rare: 'STOCK RISERS', Epic: 'CIRCUIT BREAKERS', Legendary: 'PEACH JAM ELITE', Mythic: 'PEACH JAM LEGENDS' };
 export const DAILY_CYCLE = [1, 1, 2, 1, 1, 1, 3];
@@ -80,9 +80,12 @@ export async function openPack(db: D1Like, userId: string, roster: RosterPlayer[
   try {
     const themes = JSON.parse(row.pack_themes) as string[];
     const themeId = themes.shift() || 'silver-standard';
+    const themedRoster = themeId === 'concrete-royalty' ? roster.filter((p) => p.series === 'concrete-royalty-v1') : [];
+    const concreteDrop = themedRoster.length >= 5;
+    const drawPool = [...themedRoster];
     const cards: Record<string, unknown>[] = [];
     for (let i = 0; i < 5; i++) {
-      const p = roster[Math.floor(rng() * roster.length)], rarity = rarityFor(rng()), key = cardKey(p.id, rarity);
+      const p = concreteDrop ? drawPool.splice(Math.floor(rng() * drawPool.length), 1)[0] : roster[Math.floor(rng() * roster.length)], rarity = rarityFor(rng()), key = cardKey(p.id, rarity);
       const existing = await db.prepare('SELECT quantity FROM vault_cards WHERE user_id = ?1 AND card_key = ?2').bind(userId, key).first<{ quantity: number }>();
       if (existing) await db.prepare('UPDATE vault_cards SET quantity = quantity + 1 WHERE user_id = ?1 AND card_key = ?2').bind(userId, key).run();
       else await db.prepare('INSERT INTO vault_cards (user_id, card_key, player_id, rarity, quantity, favorite, special_edition) VALUES (?1, ?2, ?3, ?4, 1, 0, ?5)').bind(userId, key, p.id, rarity, SPECIAL[rarity] ?? null).run();
@@ -108,7 +111,7 @@ export async function grantPacks(db: D1Like, userId: string, n: number) {
 }
 /** Private-site testing purchase: one no-cost featured pack with a server-validated theme. */
 export async function grantTestPack(db: D1Like, userId: string, theme: string) {
-  if (!['midnight-run', 'finals-gold', 'redline-rivalry'].includes(theme)) return false;
+  if (!['concrete-royalty', 'midnight-run', 'finals-gold', 'redline-rivalry'].includes(theme)) return false;
   const row = await getRow(db, userId), themes = JSON.parse(row.pack_themes) as string[];
   themes.push(theme);
   await db.prepare('UPDATE vaults SET packs = packs + 1, pack_themes = ?2 WHERE user_id = ?1').bind(userId, JSON.stringify(themes)).run();

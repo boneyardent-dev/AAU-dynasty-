@@ -18,8 +18,8 @@ const group = (position: string) => (['PG', 'SG', 'CG'].includes(position) ? 'G'
 /** Everything a pack can contain: the 12 starter players plus the whole recruiting class. */
 export const ROSTER: RosterPlayer[] = [
   ...(base as RosterPlayer[]),
-  ...(catalog.players as { id: string; position: string; archetype?: string }[]).map((c) => {
+  ...(catalog.players as { id: string; position: string; archetype?: string; originalSeries?: string }[]).map((c) => {
     const p = group(c.position);
-    return { id: c.id, p, r: c.archetype || (p === 'G' ? 'National Guard' : p === 'B' ? 'National Big' : 'National Wing') };
+    return { id: c.id, p, r: c.archetype || (p === 'G' ? 'National Guard' : p === 'B' ? 'National Big' : 'National Wing'), series: c.originalSeries };
   }),
 ];
