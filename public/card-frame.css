@@ -39,6 +39,14 @@
 .fictional-portrait{position:relative;overflow:hidden}.fictional-portrait .aau-img{z-index:1}.fictional-portrait.has-img span,.fictional-portrait.has-img small{display:none}
 @media (prefers-reduced-motion:reduce){.aau-foil{animation:none}.aau-tilt,.aau-inner{transition:none}}
 
+/* Concrete Royalty illustrated collectible series */
+.aau-card.aau-concrete .aau-front{border:1px solid #fff7;box-shadow:0 20px 42px #101030a8,0 0 24px #ff59d944}
+.aau-card.aau-concrete .aau-art:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.2;background:repeating-conic-gradient(from 10deg at 50% 50%,#fff 0deg 2deg,transparent 2deg 13deg);mix-blend-mode:screen}
+.aau-card.aau-concrete .aau-foil{opacity:.42;background:linear-gradient(125deg,#ff63d8,#39eaff 34%,#fff06f 55%,#ff63d8);background-size:260% 260%;animation:aau-foil 4.5s linear infinite;mix-blend-mode:screen}
+.aau-card.aau-concrete .aau-plate{border-top:1px solid #fff9;background:linear-gradient(165deg,#231750f5,#11152cf7 68%,#441d6e)}
+.aau-card.aau-concrete .aau-rib{background:linear-gradient(100deg,#ff59cc,#ffae51 48%,#ffed61);box-shadow:0 .8cqw 0 #17152c}
+.aau-card.aau-concrete .aau-rib i{color:#221333;text-shadow:0 1px #fff8}
+
 /* Rarity palettes (Common, Uncommon, Rare, Epic, Legendary, Mythic) */
 .aau-r-common{--a:#8da0b3;--b:#d5dde5;--dark:#26303b;--glow:#e6edf3;--ribbon:#5f7388}
 .aau-r-uncommon{--a:#3fbf7f;--b:#b7f0cf;--dark:#12402b;--glow:#d9f8e6;--ribbon:#2a9c64}

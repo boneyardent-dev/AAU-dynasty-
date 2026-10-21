@@ -18,7 +18,7 @@ if(require.main===module)(async()=>{
  await run(t.context,'bootCatalog()');
  assert(run(t.context,"playerPortrait(player('eli')).includes('class=\"generated-player-avatar\"')"),'the original Eli Navarro test player receives a styled portrait');
  assert(run(t.context,"playerPortrait(player('malik')).includes('class=\"generated-player-avatar\"')"),'the original Malik Carter test player receives a styled portrait');
- assert(run(t.context,"playerPortrait(player('dyn-2027-jalen-cross')).includes('/cards/dyn-2027-jalen-cross.webp')"),'Jalen Cross keeps his existing character art');
+ assert(run(t.context,"playerPortrait(player('dyn-2027-jalen-cross')).includes('/cards/dyn-2027-jalen-cross-v2.webp')"),'Jalen Cross uses his existing Concrete Royalty character art');
  assert(run(t.context,"playerPortrait(player('circuit-2027-owen')).includes('circuit-portrait')"),'Owen keeps his Circuit Originals art');
  run(t.context,'chooseTeam(0);roster()');
  const offered=new Set();let pending;

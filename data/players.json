@@ -8462,7 +8462,7 @@
         "Bag Work": 94,
         "Basketball IQ": 95
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
       "photo": null
     },
     {
@@ -8497,7 +8497,7 @@
         "Bag Work": 91,
         "Basketball IQ": 87
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
       "photo": null
     },
     {
@@ -8532,7 +8532,7 @@
         "Bag Work": 88,
         "Basketball IQ": 89
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
       "photo": null
     },
     {
@@ -8560,7 +8560,7 @@
       ],
       "sourceSnapshots": [],
       "coverage": [
-        "Dynasty Scouts"
+        "Concrete Royalty"
       ],
       "isCustom": false,
       "isFictional": true,
@@ -8586,8 +8586,11 @@
           "Concrete Royalty",
           "Arrival"
         ],
-        "versions": 3
-      }
+        "versions": 3,
+        "defaultVersion": 2
+      },
+      "signatureAbility": "Quick Change",
+      "originalSeries": "concrete-royalty-v1"
     },
     {
       "id": "circuit-2027-dante-rucker",
@@ -8595,7 +8598,7 @@
       "nickname": "Pocket Rocket",
       "classYear": 2029,
       "position": "PG",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "Oakland, CA",
       "height": "Not reported",
       "weight": null,
@@ -8631,7 +8634,7 @@
       "nickname": "Velvet",
       "classYear": 2029,
       "position": "SG",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "San Diego, CA",
       "height": "Not reported",
       "weight": null,
@@ -8667,7 +8670,7 @@
       "nickname": "Skyline",
       "classYear": 2029,
       "position": "SF",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "Chicago, IL",
       "height": "Not reported",
       "weight": null,
@@ -8703,7 +8706,7 @@
       "nickname": "Professor",
       "classYear": 2029,
       "position": "PG",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "Sacramento, CA",
       "height": "Not reported",
       "weight": null,
@@ -8739,7 +8742,7 @@
       "nickname": "Redwood",
       "classYear": 2029,
       "position": "C",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "Oakland, CA",
       "height": "Not reported",
       "weight": null,
@@ -8775,7 +8778,7 @@
       "nickname": "Bulldozer",
       "classYear": 2029,
       "position": "PF",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "Fresno, CA",
       "height": "Not reported",
       "weight": null,
@@ -8811,7 +8814,7 @@
       "nickname": "Round Mound",
       "classYear": 2029,
       "position": "C",
-      "school": "Circuit Originals · Fictional",
+      "school": "Circuit Originals \u00b7 Fictional",
       "hometown": "NorCal",
       "height": "Not reported",
       "weight": null,
@@ -8840,6 +8843,236 @@
         "Basketball IQ": 83
       },
       "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+    },
+    {
+      "id": "concrete-2027-kai-mori",
+      "name": "Kai Mori",
+      "classYear": 2027,
+      "position": "SG",
+      "school": "Concrete Royalty",
+      "hometown": "Not reported",
+      "height": "Not reported",
+      "weight": null,
+      "commitment": {
+        "status": "None",
+        "school": null,
+        "date": null
+      },
+      "rankings": [],
+      "sourceSnapshots": [],
+      "coverage": [
+        "Concrete Royalty"
+      ],
+      "isCustom": false,
+      "isFictional": true,
+      "originalSeries": "concrete-royalty-v1",
+      "archetype": "Quiet Range",
+      "signatureAbility": "Corner Office",
+      "bio": "A precise shot maker who stays composed when the court gets loud.",
+      "gameRatings": {
+        "Ball Handling": 87,
+        "Athleticism": 84,
+        "Shooting": 96,
+        "Defense": 82,
+        "Bag Work": 89,
+        "Basketball IQ": 93
+      },
+      "ratingsMethod": "Original fictional character and gameplay ratings for AAU Dynasty. Not a real recruit or published scouting grades.",
+      "avatar": {
+        "initials": "KM",
+        "number": 11,
+        "hue": 265
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Concrete Royalty"
+        ]
+      }
+    },
+    {
+      "id": "concrete-2027-mateo-reyes",
+      "name": "Mateo Reyes",
+      "classYear": 2027,
+      "position": "SF",
+      "school": "Concrete Royalty",
+      "hometown": "Not reported",
+      "height": "Not reported",
+      "weight": null,
+      "commitment": {
+        "status": "None",
+        "school": null,
+        "date": null
+      },
+      "rankings": [],
+      "sourceSnapshots": [],
+      "coverage": [
+        "Concrete Royalty"
+      ],
+      "isCustom": false,
+      "isFictional": true,
+      "originalSeries": "concrete-royalty-v1",
+      "archetype": "Highlight Wing",
+      "signatureAbility": "Sunset Flight",
+      "bio": "An imaginative wing who turns open space into a highlight.",
+      "gameRatings": {
+        "Ball Handling": 86,
+        "Athleticism": 93,
+        "Shooting": 89,
+        "Defense": 82,
+        "Bag Work": 88,
+        "Basketball IQ": 86
+      },
+      "ratingsMethod": "Original fictional character and gameplay ratings for AAU Dynasty. Not a real recruit or published scouting grades.",
+      "avatar": {
+        "initials": "MR",
+        "number": 10,
+        "hue": 48
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Concrete Royalty"
+        ]
+      }
+    },
+    {
+      "id": "concrete-2027-malik-okafor",
+      "name": "Malik Okafor",
+      "classYear": 2027,
+      "position": "C",
+      "school": "Concrete Royalty",
+      "hometown": "Not reported",
+      "height": "Not reported",
+      "weight": null,
+      "commitment": {
+        "status": "None",
+        "school": null,
+        "date": null
+      },
+      "rankings": [],
+      "sourceSnapshots": [],
+      "coverage": [
+        "Concrete Royalty"
+      ],
+      "isCustom": false,
+      "isFictional": true,
+      "originalSeries": "concrete-royalty-v1",
+      "archetype": "Paint Anchor",
+      "signatureAbility": "Skyline Reach",
+      "bio": "A calm interior anchor who protects the rim and owns the glass.",
+      "gameRatings": {
+        "Ball Handling": 69,
+        "Athleticism": 86,
+        "Shooting": 73,
+        "Defense": 94,
+        "Bag Work": 81,
+        "Basketball IQ": 88
+      },
+      "ratingsMethod": "Original fictional character and gameplay ratings for AAU Dynasty. Not a real recruit or published scouting grades.",
+      "avatar": {
+        "initials": "MO",
+        "number": 34,
+        "hue": 165
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Concrete Royalty"
+        ]
+      }
+    },
+    {
+      "id": "concrete-2027-owen-brooks",
+      "name": "Owen Brooks",
+      "classYear": 2027,
+      "position": "PF",
+      "school": "Concrete Royalty",
+      "hometown": "Not reported",
+      "height": "Not reported",
+      "weight": null,
+      "commitment": {
+        "status": "None",
+        "school": null,
+        "date": null
+      },
+      "rankings": [],
+      "sourceSnapshots": [],
+      "coverage": [
+        "Concrete Royalty"
+      ],
+      "isCustom": false,
+      "isFictional": true,
+      "originalSeries": "concrete-royalty-v1",
+      "archetype": "Glass Cleaner",
+      "signatureAbility": "Board Boss",
+      "bio": "A powerful rebounder who creates extra chances for the whole squad.",
+      "gameRatings": {
+        "Ball Handling": 74,
+        "Athleticism": 82,
+        "Shooting": 77,
+        "Defense": 88,
+        "Bag Work": 86,
+        "Basketball IQ": 85
+      },
+      "ratingsMethod": "Original fictional character and gameplay ratings for AAU Dynasty. Not a real recruit or published scouting grades.",
+      "avatar": {
+        "initials": "OB",
+        "number": 15,
+        "hue": 215
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Concrete Royalty"
+        ]
+      }
+    },
+    {
+      "id": "concrete-2027-darius-vale",
+      "name": "Darius Vale",
+      "classYear": 2027,
+      "position": "SG",
+      "school": "Concrete Royalty",
+      "hometown": "Not reported",
+      "height": "Not reported",
+      "weight": null,
+      "commitment": {
+        "status": "None",
+        "school": null,
+        "date": null
+      },
+      "rankings": [],
+      "sourceSnapshots": [],
+      "coverage": [
+        "Concrete Royalty"
+      ],
+      "isCustom": false,
+      "isFictional": true,
+      "originalSeries": "concrete-royalty-v1",
+      "archetype": "Flash Creator",
+      "signatureAbility": "Thread the Needle",
+      "bio": "A daring creator who sees passing lanes before they open.",
+      "gameRatings": {
+        "Ball Handling": 94,
+        "Athleticism": 91,
+        "Shooting": 85,
+        "Defense": 84,
+        "Bag Work": 96,
+        "Basketball IQ": 91
+      },
+      "ratingsMethod": "Original fictional character and gameplay ratings for AAU Dynasty. Not a real recruit or published scouting grades.",
+      "avatar": {
+        "initials": "DV",
+        "number": 5,
+        "hue": 278
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Concrete Royalty"
+        ]
+      }
     }
   ]
 }

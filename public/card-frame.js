@@ -4,9 +4,9 @@ const AAU_CROWN='<svg class="aau-crown" viewBox="0 0 28 20" aria-hidden="true"><
 const aauVer={};
 function aauArtUrl(p,v){const A=typeof window!=='undefined'&&window.AAU_ART&&window.AAU_ART[p.id];return A?(A[v-1]||A[0]):'/cards/'+p.id+(v>1?'-v'+v:'')+'.webp'}
 function aauImg(p,v=1){const c=p.catalog;return c&&c.art&&c.art.versions?`<img class="aau-img" alt="" loading="lazy" decoding="async" src="${aauArtUrl(p,v)}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">`:''}
-function aauVersion(p){const n=(p.catalog&&p.catalog.art&&p.catalog.art.versions)||1;return Math.max(1,Math.min(n,aauVer[p.id]||1))}
+function aauVersion(p){const art=(p.catalog&&p.catalog.art)||{},n=art.versions||1;return Math.max(1,Math.min(n,aauVer[p.id]||art.defaultVersion||1))}
 function aauTier(p,ovr){const n=(p.catalog&&p.catalog.art&&p.catalog.art.versions)||1;return n>1?aauVersion(p):ovr>=87?3:ovr>=80?2:1}
-function aauCard(p,o={}){const c=p.catalog||{},values=o.values||cardAttributes(p),ovr=cardOvr(values),ph=physProfile(p),v=aauVersion(p),tier=aauTier(p,ovr),rar=o.rarity?String(o.rarity):'',cls=rar?'aau-r-'+rar.toLowerCase().replace(/[^a-z]/g,''):'aau-t'+tier,
+function aauCard(p,o={}){const c=p.catalog||{},values=o.values||cardAttributes(p),ovr=cardOvr(values),ph=physProfile(p),v=aauVersion(p),tier=aauTier(p,ovr),rar=o.rarity?String(o.rarity):'',cls=(rar?'aau-r-'+rar.toLowerCase().replace(/[^a-z]/g,''):'aau-t'+tier)+(c.originalSeries==='concrete-royalty-v1'?' aau-concrete':''),
  title=(c.art&&c.art.titles&&c.art.titles[v-1])||c.archetype||p.r||'',name=String(p.n),pos=c.position||p.p||'',
  ini=(c.avatar&&c.avatar.initials)||name.split(' ').filter(x=>x!=='Jr.').map(x=>x[0]).slice(0,2).join(''),
  nfs=Math.min(12.5,12.5*11/Math.max(11,name.length)),size=physFmt(ph.inches)+' \u00B7 '+ph.lbs+' lbs'+(ph.hKnown&&ph.wKnown?'':' (est.)'),

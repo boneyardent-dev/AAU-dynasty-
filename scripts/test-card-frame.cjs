@@ -22,5 +22,5 @@ ctx.__p=mk();for(const r of ['Common','Uncommon','Rare','Epic','Legendary','Myth
 const seed=JSON.parse(fs.readFileSync(root+'data/players.json','utf8')).players,j=seed.find(p=>p.id==='dyn-2027-jalen-cross');
 assert(j&&j.art.versions===3&&j.art.titles.length===3,'sample player has three art versions');
 for(const n of ['dyn-2027-jalen-cross','dyn-2027-jalen-cross-v2','dyn-2027-jalen-cross-v3'])assert(fs.existsSync(root+'public/cards/'+n+'.webp'),n+' art file exists');
-assert(seed.filter(p=>p.art).length===1,'only players with art files are flagged');
+assert(seed.filter(p=>p.art).length===6,'only the six illustrated Concrete Royalty players are flagged with art');
 console.log('PASS: tiers, six rarities, content, accessibility, no-art fallback, art versions and chips, escaping, long names, inline art map, seed flags and files.');

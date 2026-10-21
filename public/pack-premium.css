@@ -135,6 +135,23 @@
  .pr-theater,.pr-pull-wrap{scroll-behavior:auto}
 }
 
+/* Concrete Royalty drop: illustrated streetball energy, built around the cards. */
+.pr-theater.pr-theme-concrete-royalty{--drop-accent:#ff65d9;--drop-glow:#42dcff;border-color:#d465e4;background:radial-gradient(ellipse at 50% 9%,#ff65d936,transparent 35%),radial-gradient(ellipse at 80% 60%,#42dcff22,transparent 38%),linear-gradient(145deg,#171144,#0b1430 58%,#15102a)}
+.pr-theater.pr-theme-concrete-royalty:before{background:repeating-linear-gradient(135deg,transparent 0 44px,#43ddff0c 45px 47px),repeating-linear-gradient(45deg,transparent 0 74px,#ff65d90a 75px 77px)}
+.pr-theme-concrete-royalty .pr-stage-copy .pr-eyebrow{color:#fff06f;text-shadow:0 0 15px #ff65d980}
+.pr-theme-concrete-royalty .pr-stage-copy h2{font-family:"Lilita One",Impact,sans-serif;color:#fff;text-shadow:3px 4px 0 #cc45c8,0 0 22px #42dcff65;letter-spacing:.015em}
+.pr-theme-concrete-royalty .pr-stage-copy p{color:#d8e7ff}
+.pr-theme-concrete-royalty .pr-pack-art{border:2px solid #fff06f;border-radius:16px;box-shadow:0 24px 64px #000b,0 0 35px #ff65d94d,0 0 62px #42dcff35}
+.pr-theme-concrete-royalty .pr-pack-art:after{inset:7px;border:1px solid #fff8;border-radius:10px}
+.pr-theme-concrete-royalty .pr-art-swipe{border-color:#42dcff;background:linear-gradient(100deg,#251044ed,#173b58ed);color:#fff06f;box-shadow:0 0 22px #42dcff48}
+.pr-theme-concrete-royalty .pr-summary-card{border:2px solid #42dcff;background:linear-gradient(150deg,#fff9d5,#ffe3f6 42%,#d8f7ff);box-shadow:0 12px 26px #0008,0 0 18px #ff65d94d,inset 0 0 0 2px #fff9}
+.pr-theme-concrete-royalty .pr-summary-card:nth-child(3n+1){border-color:#ff65d9}.pr-theme-concrete-royalty .pr-summary-card:nth-child(3n+2){border-color:#42dcff}.pr-theme-concrete-royalty .pr-summary-card:nth-child(3n){border-color:#fff06f}
+.pr-theme-concrete-royalty .pr-summary-index{background:#29124de8;color:#fff06f}
+.pr-theme-concrete-royalty .pr-summary-rarity{color:#392353}
+.pr-side-panel.pr-shop-card.pr-theme-concrete-royalty{--drop-accent:#ff65d9;--drop-glow:#42dcff;border-color:#ff65d9;background:radial-gradient(ellipse at 100% 0,#ff65d930,transparent 58%),linear-gradient(145deg,#211447,#101827)}
+.pr-shop-card.pr-theme-concrete-royalty .pr-shop-art{border-color:#42dcff80;box-shadow:0 10px 28px #ff65d922}
+.pr-shop-card.pr-theme-concrete-royalty .pr-shop-title h3{font-family:"Lilita One",Impact,sans-serif;color:#fff06f;text-shadow:2px 2px 0 #c845be}
+
 /* AAU Dynasty featured drops: use the approved pack/player artwork as the live pack face. */
 .pr-art-podium{min-height:clamp(490px,62vw,660px);margin:12px 0 8px;perspective:1100px}
 .pr-pack-art{position:relative;isolation:isolate;width:min(100%,520px);aspect-ratio:.82;overflow:hidden;padding:0;border:1px solid #b9c6d5;border-radius:12px;background:#09111b;box-shadow:0 26px 65px #000b,0 0 55px color-mix(in srgb,var(--drop-accent,#d9e5f0) 22%,transparent);transform:rotate(-2deg) rotateY(-4deg);transition:transform .35s,box-shadow .35s;animation:pr-hover 5s ease-in-out infinite;touch-action:none;user-select:none;-webkit-user-select:none}

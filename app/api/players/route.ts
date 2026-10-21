@@ -2,7 +2,7 @@ import { env } from 'cloudflare:workers';
 import seed from '../../../data/players.json';
 import archetypes from '../../../data/archetypes.json';
 import { classifyArchetype } from '../../../lib/player-archetype';
-const catalogVersion = '2027:' + seed.observedAt + ':archetypes-v1:all-fictional-v2:circuit-originals-v1';
+const catalogVersion = '2027:' + seed.observedAt + ':archetypes-v1:all-fictional-v2:circuit-originals-v1:concrete-royalty-v1';
 let initializing:Promise<void>|undefined;
 async function ensureCatalog(){
  const db=env.DB;

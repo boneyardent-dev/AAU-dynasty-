@@ -9,6 +9,6 @@ assert(/c\?\.originalSeries==='circuit-originals-v1'&&c\.artPanel/.test(html),'c
 assert(/function generatedPlayerAvatar\(p\)/.test(html)&&/Game-generated basketball portrait/.test(html),'players without verified photos receive an illustrated game portrait');
 assert(fs.existsSync(root+'/public/originals/draft-athletes-grid.png'),'the photographic player portrait sheet is shipped with the app');
 assert(/background-image:url\('\/originals\/draft-athletes-grid\.png'\)/.test(html),'missing-photo players use the generated portrait grid');
-assert(/fictionalPool=players\.filter\(p=>p\.catalog\?\.originalSeries==='circuit-originals-v1'\)/.test(pack),'pack pulls use the Circuit Originals cast');
+assert(/targetSeries=themeId==='concrete-royalty'\?'concrete-royalty-v1':'circuit-originals-v1'/.test(pack)&&/fictionalPool=players\.filter\(p=>p\.catalog\?\.originalSeries===targetSeries\)/.test(pack),'standard packs retain Circuit Originals while themed packs can select a separate cast');
 assert(css.includes('/originals/circuit-originals-sheet.png'),'card portraits use the generated art');
 console.log('PASS: seven fictional characters, seven distinct art panels, pack-only pulls, and card art integration.');
