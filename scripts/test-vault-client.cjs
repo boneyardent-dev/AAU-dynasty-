@@ -23,6 +23,7 @@ const vault=(o={})=>({packs:3,matches:7,packThemes:[],last:null,cards:[{cardKey:
  let c=JSON.parse(ls.col);assert.equal(c.packs,3,'server pack count replaces the local one');assert.equal(c.matches,7);assert.deepEqual(Object.keys(c.inventory),['a:silver-foil:Epic','zz:silver-foil:Rare'],'cards are retained until their player profiles load');
  const e=c.inventory['a:silver-foil:Epic'];assert.deepEqual([e.quantity,e.favorite,e.specialEdition,e.attributes[0]],[2,true,'CIRCUIT BREAKERS',80]);assert.equal(c.daily.streak,2);assert.equal(c.season.xp,40);assert.equal(c.goals.guards5,'2026-10-19');
  players.push({id:'zz',n:'Late Profile',p:'G',r:'Guard',a:72});assert.equal(run("players.find(p=>p.id===JSON.parse(localStorage.getItem(collectionKey)).inventory['zz:silver-foil:Rare'].playerId).n"),'Late Profile','deferred player data resolves a previously loaded card');
+ const gameHtml=fs.readFileSync(root+'game.html','utf8');assert(/for\(const c of catalogData\.players\)[\s\S]*?await vaultHydrate\(\);home\(\)/.test(gameHtml),'rehydrate saved cards after the player catalog is ready');
  assert.equal(JSON.parse(ls['col:local-backup']).packs,9,'the old local collection is backed up once');
  get={status:200,body:{vault:vault({packs:4})}};await run('vaultHydrate()');assert.equal(JSON.parse(ls['col:local-backup']).packs,9,'backup is not overwritten');
  // opening a pack goes to the server and never to the local draw
