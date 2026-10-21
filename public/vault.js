@@ -4,8 +4,8 @@
 const aauVault={enabled:false,backedUp:false};
 async function vaultCall(method,body){const r=await fetch('/api/vault',method==='POST'?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{cache:'no-store'});
  const d=await r.json().catch(()=>({}));if(!r.ok){const e=new Error(d.error||'Could not reach the server. Try again.');e.status=r.status;throw e}return d}
-function vaultCards(state){const out={};for(const x of state.cards||[]){const p=players.find(q=>q.id===x.playerId);if(!p)continue;
- out[x.cardKey]={playerId:x.playerId,edition:'silver-foil',rarity:x.rarity,quantity:x.quantity,favorite:!!x.favorite,attributes:cardAttributes(p),...(x.specialEdition?{specialEdition:x.specialEdition}:{})}}return out}
+function vaultCards(state){const out={};for(const x of state.cards||[]){const p=players.find(q=>q.id===x.playerId);
+ out[x.cardKey]={playerId:x.playerId,edition:'silver-foil',rarity:x.rarity,quantity:x.quantity,favorite:!!x.favorite,...(p?{attributes:cardAttributes(p)}:{}),...(x.specialEdition?{specialEdition:x.specialEdition}:{})}}return out}
 async function vaultApply(state,opts={}){
  if(!aauVault.backedUp){try{const k=collectionKey+':local-backup',raw=localStorage.getItem(collectionKey);if(raw&&!localStorage.getItem(k))localStorage.setItem(k,raw)}catch(e){}aauVault.backedUp=true}
  await inventoryChange(c=>{c.packs=state.packs;c.matches=state.matches;c.packThemes=state.packThemes||[];c.inventory=vaultCards(state);c.daily=state.daily;c.goals=state.goals;c.season=state.season;
