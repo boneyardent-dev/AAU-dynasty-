@@ -28,7 +28,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 1,
-          "rating": 99.0,
+          "rating": 99,
           "stars": 5,
           "reportedVia": "in-game"
         }
@@ -54,6 +54,12 @@
         "initials": "TI",
         "number": 31,
         "hue": 336
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -100,6 +106,12 @@
         "initials": "EJ",
         "number": 25,
         "hue": 188
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -146,6 +158,12 @@
         "initials": "OG",
         "number": 13,
         "hue": 99
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -192,6 +210,12 @@
         "initials": "WB",
         "number": 31,
         "hue": 294
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -238,6 +262,12 @@
         "initials": "OD",
         "number": 0,
         "hue": 33
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -284,6 +314,12 @@
         "initials": "ET",
         "number": 3,
         "hue": 277
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -330,6 +366,12 @@
         "initials": "CR",
         "number": 25,
         "hue": 20
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -350,7 +392,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 8,
-          "rating": 98.0,
+          "rating": 98,
           "stars": 5,
           "reportedVia": "in-game"
         }
@@ -376,6 +418,12 @@
         "initials": "DD",
         "number": 15,
         "hue": 51
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -422,6 +470,12 @@
         "initials": "OB",
         "number": 44,
         "hue": 320
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -468,6 +522,12 @@
         "initials": "KZ",
         "number": 0,
         "hue": 187
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -514,6 +574,12 @@
         "initials": "TJ",
         "number": 0,
         "hue": 30
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -560,6 +626,12 @@
         "initials": "EP",
         "number": 10,
         "hue": 341
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -606,6 +678,12 @@
         "initials": "HV",
         "number": 23,
         "hue": 110
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -652,6 +730,12 @@
         "initials": "ZS",
         "number": 14,
         "hue": 181
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -672,7 +756,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 15,
-          "rating": 97.0,
+          "rating": 97,
           "stars": 5,
           "reportedVia": "in-game"
         }
@@ -698,6 +782,12 @@
         "initials": "CA",
         "number": 55,
         "hue": 333
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -744,6 +834,12 @@
         "initials": "EM",
         "number": 13,
         "hue": 274
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -790,6 +886,12 @@
         "initials": "NI",
         "number": 32,
         "hue": 171
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -836,6 +938,12 @@
         "initials": "MC",
         "number": 5,
         "hue": 320
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -882,6 +990,12 @@
         "initials": "DQ",
         "number": 15,
         "hue": 151
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -928,6 +1042,12 @@
         "initials": "QS",
         "number": 12,
         "hue": 352
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -974,6 +1094,12 @@
         "initials": "MY",
         "number": 12,
         "hue": 76
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1020,6 +1146,12 @@
         "initials": "PB",
         "number": 21,
         "hue": 317
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1066,6 +1198,12 @@
         "initials": "AB",
         "number": 33,
         "hue": 116
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1112,6 +1250,12 @@
         "initials": "AG",
         "number": 32,
         "hue": 177
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1158,6 +1302,12 @@
         "initials": "NU",
         "number": 14,
         "hue": 100
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1204,6 +1354,12 @@
         "initials": "EP",
         "number": 45,
         "hue": 258
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1250,6 +1406,12 @@
         "initials": "FP",
         "number": 55,
         "hue": 326
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1296,6 +1458,12 @@
         "initials": "VJ",
         "number": 5,
         "hue": 237
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1342,6 +1510,12 @@
         "initials": "GJ",
         "number": 45,
         "hue": 276
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1388,6 +1562,12 @@
         "initials": "BT",
         "number": 34,
         "hue": 223
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1434,6 +1614,12 @@
         "initials": "LZ",
         "number": 10,
         "hue": 21
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1480,6 +1666,12 @@
         "initials": "MH",
         "number": 3,
         "hue": 125
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1526,6 +1718,12 @@
         "initials": "KH",
         "number": 20,
         "hue": 338
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1572,6 +1770,12 @@
         "initials": "MU",
         "number": 13,
         "hue": 345
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1618,6 +1822,12 @@
         "initials": "YM",
         "number": 32,
         "hue": 353
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1664,6 +1874,12 @@
         "initials": "IP",
         "number": 13,
         "hue": 82
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1684,7 +1900,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 37,
-          "rating": 94.0,
+          "rating": 94,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -1710,6 +1926,12 @@
         "initials": "EE",
         "number": 44,
         "hue": 155
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1756,6 +1978,12 @@
         "initials": "SK",
         "number": 30,
         "hue": 289
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1802,6 +2030,12 @@
         "initials": "LC",
         "number": 11,
         "hue": 145
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1848,6 +2082,12 @@
         "initials": "JK",
         "number": 0,
         "hue": 253
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1894,6 +2134,12 @@
         "initials": "IB",
         "number": 33,
         "hue": 183
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1940,6 +2186,12 @@
         "initials": "MR",
         "number": 5,
         "hue": 220
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -1986,6 +2238,12 @@
         "initials": "AA",
         "number": 14,
         "hue": 269
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2006,7 +2264,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 44,
-          "rating": 93.0,
+          "rating": 93,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -2032,6 +2290,12 @@
         "initials": "ZI",
         "number": 0,
         "hue": 139
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2078,6 +2342,12 @@
         "initials": "MV",
         "number": 25,
         "hue": 242
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2124,6 +2394,12 @@
         "initials": "GA",
         "number": 15,
         "hue": 84
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2170,6 +2446,12 @@
         "initials": "KM",
         "number": 45,
         "hue": 178
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2216,6 +2498,12 @@
         "initials": "JM",
         "number": 55,
         "hue": 154
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2262,6 +2550,12 @@
         "initials": "LP",
         "number": 1,
         "hue": 218
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2308,6 +2602,12 @@
         "initials": "NN",
         "number": 10,
         "hue": 310
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2328,7 +2628,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 51,
-          "rating": 92.0,
+          "rating": 92,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -2354,6 +2654,12 @@
         "initials": "RV",
         "number": 10,
         "hue": 43
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2400,6 +2706,12 @@
         "initials": "AA",
         "number": 34,
         "hue": 272
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2446,6 +2758,12 @@
         "initials": "CF",
         "number": 1,
         "hue": 87
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2492,6 +2810,12 @@
         "initials": "LM",
         "number": 21,
         "hue": 306
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2538,6 +2862,12 @@
         "initials": "CY",
         "number": 31,
         "hue": 316
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2584,6 +2914,12 @@
         "initials": "DP",
         "number": 35,
         "hue": 171
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2630,6 +2966,12 @@
         "initials": "JT",
         "number": 35,
         "hue": 95
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2650,7 +2992,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 58,
-          "rating": 91.0,
+          "rating": 91,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -2676,6 +3018,12 @@
         "initials": "HA",
         "number": 44,
         "hue": 162
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2722,6 +3070,12 @@
         "initials": "RK",
         "number": 33,
         "hue": 54
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2768,6 +3122,12 @@
         "initials": "SH",
         "number": 45,
         "hue": 353
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2814,6 +3174,12 @@
         "initials": "TD",
         "number": 13,
         "hue": 206
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2860,6 +3226,12 @@
         "initials": "BB",
         "number": 5,
         "hue": 26
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2906,6 +3278,12 @@
         "initials": "MD",
         "number": 32,
         "hue": 260
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2952,6 +3330,12 @@
         "initials": "TW",
         "number": 0,
         "hue": 278
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -2998,6 +3382,12 @@
         "initials": "DY",
         "number": 10,
         "hue": 44
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3044,6 +3434,12 @@
         "initials": "TL",
         "number": 33,
         "hue": 74
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3090,6 +3486,12 @@
         "initials": "DJ",
         "number": 4,
         "hue": 101
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3136,6 +3538,12 @@
         "initials": "ER",
         "number": 34,
         "hue": 72
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3182,6 +3590,12 @@
         "initials": "MO",
         "number": 11,
         "hue": 60
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3228,6 +3642,12 @@
         "initials": "WL",
         "number": 13,
         "hue": 2
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3274,6 +3694,12 @@
         "initials": "MJ",
         "number": 24,
         "hue": 103
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3320,6 +3746,12 @@
         "initials": "HH",
         "number": 21,
         "hue": 261
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3366,6 +3798,12 @@
         "initials": "GN",
         "number": 55,
         "hue": 194
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3412,6 +3850,12 @@
         "initials": "MJ",
         "number": 11,
         "hue": 310
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3458,6 +3902,12 @@
         "initials": "MJ",
         "number": 34,
         "hue": 339
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3504,6 +3954,12 @@
         "initials": "TD",
         "number": 33,
         "hue": 166
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3550,6 +4006,12 @@
         "initials": "TW",
         "number": 31,
         "hue": 40
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3596,6 +4058,12 @@
         "initials": "CY",
         "number": 23,
         "hue": 133
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3642,6 +4110,12 @@
         "initials": "RZ",
         "number": 25,
         "hue": 4
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3662,7 +4136,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 80,
-          "rating": 88.0,
+          "rating": 88,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -3688,6 +4162,12 @@
         "initials": "FK",
         "number": 30,
         "hue": 8
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3734,6 +4214,12 @@
         "initials": "HC",
         "number": 35,
         "hue": 103
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3780,6 +4266,12 @@
         "initials": "WO",
         "number": 35,
         "hue": 340
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3826,6 +4318,12 @@
         "initials": "OW",
         "number": 15,
         "hue": 292
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3872,6 +4370,12 @@
         "initials": "ZA",
         "number": 45,
         "hue": 65
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3918,6 +4422,12 @@
         "initials": "TF",
         "number": 13,
         "hue": 329
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3964,6 +4474,12 @@
         "initials": "AW",
         "number": 35,
         "hue": 154
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -3984,7 +4500,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 87,
-          "rating": 87.0,
+          "rating": 87,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -4010,6 +4526,12 @@
         "initials": "XM",
         "number": 13,
         "hue": 60
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4056,6 +4578,12 @@
         "initials": "OD",
         "number": 11,
         "hue": 266
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4102,6 +4630,12 @@
         "initials": "NR",
         "number": 34,
         "hue": 23
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4148,6 +4682,12 @@
         "initials": "DP",
         "number": 25,
         "hue": 174
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4194,6 +4734,12 @@
         "initials": "HU",
         "number": 33,
         "hue": 233
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4240,6 +4786,12 @@
         "initials": "JI",
         "number": 5,
         "hue": 337
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4286,6 +4838,12 @@
         "initials": "UK",
         "number": 45,
         "hue": 33
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4306,7 +4864,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 94,
-          "rating": 86.0,
+          "rating": 86,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -4332,6 +4890,12 @@
         "initials": "PK",
         "number": 21,
         "hue": 191
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4378,6 +4942,12 @@
         "initials": "OW",
         "number": 23,
         "hue": 68
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4424,6 +4994,12 @@
         "initials": "AW",
         "number": 11,
         "hue": 245
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4470,6 +5046,12 @@
         "initials": "CX",
         "number": 15,
         "hue": 244
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4516,6 +5098,12 @@
         "initials": "BM",
         "number": 44,
         "hue": 191
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4562,6 +5150,12 @@
         "initials": "WJ",
         "number": 35,
         "hue": 278
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4608,6 +5202,12 @@
         "initials": "JD",
         "number": 14,
         "hue": 104
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4628,7 +5228,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 101,
-          "rating": 85.0,
+          "rating": 85,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -4654,6 +5254,12 @@
         "initials": "EE",
         "number": 33,
         "hue": 59
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4700,6 +5306,12 @@
         "initials": "LV",
         "number": 3,
         "hue": 105
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4746,6 +5358,12 @@
         "initials": "WB",
         "number": 11,
         "hue": 346
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4792,6 +5410,12 @@
         "initials": "PP",
         "number": 30,
         "hue": 314
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4838,6 +5462,12 @@
         "initials": "VZ",
         "number": 13,
         "hue": 187
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4884,6 +5514,12 @@
         "initials": "ME",
         "number": 15,
         "hue": 154
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4930,6 +5566,12 @@
         "initials": "EP",
         "number": 44,
         "hue": 184
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -4976,6 +5618,12 @@
         "initials": "VB",
         "number": 44,
         "hue": 279
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5022,6 +5670,12 @@
         "initials": "BV",
         "number": 3,
         "hue": 154
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5068,6 +5722,12 @@
         "initials": "TF",
         "number": 1,
         "hue": 248
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5114,6 +5774,12 @@
         "initials": "ES",
         "number": 25,
         "hue": 22
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5160,6 +5826,12 @@
         "initials": "NE",
         "number": 33,
         "hue": 32
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5206,6 +5878,12 @@
         "initials": "JC",
         "number": 24,
         "hue": 126
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5252,6 +5930,12 @@
         "initials": "VO",
         "number": 5,
         "hue": 282
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5298,6 +5982,12 @@
         "initials": "TS",
         "number": 21,
         "hue": 154
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5344,6 +6034,12 @@
         "initials": "TI",
         "number": 11,
         "hue": 35
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5390,6 +6086,12 @@
         "initials": "LB",
         "number": 55,
         "hue": 130
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5436,6 +6138,12 @@
         "initials": "GD",
         "number": 11,
         "hue": 352
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5482,6 +6190,12 @@
         "initials": "AL",
         "number": 24,
         "hue": 37
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5528,6 +6242,12 @@
         "initials": "LB",
         "number": 23,
         "hue": 324
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5574,6 +6294,12 @@
         "initials": "TU",
         "number": 24,
         "hue": 185
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5620,6 +6346,12 @@
         "initials": "IW",
         "number": 14,
         "hue": 233
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5640,7 +6372,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 123,
-          "rating": 82.0,
+          "rating": 82,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -5666,6 +6398,12 @@
         "initials": "DV",
         "number": 15,
         "hue": 166
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5712,6 +6450,12 @@
         "initials": "LO",
         "number": 34,
         "hue": 140
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5758,6 +6502,12 @@
         "initials": "ED",
         "number": 11,
         "hue": 221
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5804,6 +6554,12 @@
         "initials": "DH",
         "number": 45,
         "hue": 212
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5850,6 +6606,12 @@
         "initials": "CN",
         "number": 33,
         "hue": 35
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5896,6 +6658,12 @@
         "initials": "IM",
         "number": 0,
         "hue": 153
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5942,6 +6710,12 @@
         "initials": "ER",
         "number": 15,
         "hue": 82
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -5962,7 +6736,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 130,
-          "rating": 81.0,
+          "rating": 81,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -5988,6 +6762,12 @@
         "initials": "VL",
         "number": 20,
         "hue": 8
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6034,6 +6814,12 @@
         "initials": "MB",
         "number": 15,
         "hue": 219
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6080,6 +6866,12 @@
         "initials": "FT",
         "number": 35,
         "hue": 311
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6126,6 +6918,12 @@
         "initials": "PT",
         "number": 21,
         "hue": 187
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6172,6 +6970,12 @@
         "initials": "KS",
         "number": 12,
         "hue": 204
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6218,6 +7022,12 @@
         "initials": "BG",
         "number": 30,
         "hue": 119
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6264,6 +7074,12 @@
         "initials": "GG",
         "number": 55,
         "hue": 215
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6284,7 +7100,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 137,
-          "rating": 80.0,
+          "rating": 80,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -6310,6 +7126,12 @@
         "initials": "DP",
         "number": 3,
         "hue": 109
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6356,6 +7178,12 @@
         "initials": "AZ",
         "number": 11,
         "hue": 272
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6402,6 +7230,12 @@
         "initials": "SX",
         "number": 22,
         "hue": 299
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6448,6 +7282,12 @@
         "initials": "WP",
         "number": 12,
         "hue": 182
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6494,6 +7334,12 @@
         "initials": "UY",
         "number": 10,
         "hue": 239
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6540,6 +7386,12 @@
         "initials": "MW",
         "number": 34,
         "hue": 50
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6586,6 +7438,12 @@
         "initials": "OA",
         "number": 1,
         "hue": 147
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6606,7 +7464,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 144,
-          "rating": 79.0,
+          "rating": 79,
           "stars": 4,
           "reportedVia": "in-game"
         }
@@ -6632,6 +7490,12 @@
         "initials": "MJ",
         "number": 44,
         "hue": 9
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6678,6 +7542,12 @@
         "initials": "OO",
         "number": 15,
         "hue": 312
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6724,6 +7594,12 @@
         "initials": "ZA",
         "number": 3,
         "hue": 285
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6770,6 +7646,12 @@
         "initials": "NB",
         "number": 45,
         "hue": 195
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6816,6 +7698,12 @@
         "initials": "OZ",
         "number": 44,
         "hue": 276
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6862,6 +7750,12 @@
         "initials": "ED",
         "number": 10,
         "hue": 90
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6908,6 +7802,12 @@
         "initials": "ZO",
         "number": 31,
         "hue": 314
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -6954,6 +7854,12 @@
         "initials": "WG",
         "number": 3,
         "hue": 234
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7000,6 +7906,12 @@
         "initials": "TI",
         "number": 25,
         "hue": 118
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7046,6 +7958,12 @@
         "initials": "PO",
         "number": 2,
         "hue": 41
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7092,6 +8010,12 @@
         "initials": "VL",
         "number": 23,
         "hue": 341
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7138,6 +8062,12 @@
         "initials": "ML",
         "number": 35,
         "hue": 72
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7184,6 +8114,12 @@
         "initials": "DQ",
         "number": 21,
         "hue": 194
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7230,6 +8166,12 @@
         "initials": "KG",
         "number": 14,
         "hue": 43
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7276,6 +8218,12 @@
         "initials": "EI",
         "number": 21,
         "hue": 232
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7322,6 +8270,12 @@
         "initials": "DA",
         "number": 15,
         "hue": 133
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7368,6 +8322,12 @@
         "initials": "JF",
         "number": 4,
         "hue": 263
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7414,6 +8374,12 @@
         "initials": "ZY",
         "number": 2,
         "hue": 242
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7460,6 +8426,12 @@
         "initials": "LH",
         "number": 2,
         "hue": 117
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7506,6 +8478,12 @@
         "initials": "RW",
         "number": 34,
         "hue": 64
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7552,6 +8530,12 @@
         "initials": "JJ",
         "number": 20,
         "hue": 176
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7598,6 +8582,12 @@
         "initials": "LN",
         "number": 13,
         "hue": 2
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7618,7 +8608,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 166,
-          "rating": 76.0,
+          "rating": 76,
           "stars": 3,
           "reportedVia": "in-game"
         }
@@ -7644,6 +8634,12 @@
         "initials": "RS",
         "number": 21,
         "hue": 242
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7690,6 +8686,12 @@
         "initials": "QZ",
         "number": 15,
         "hue": 73
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7736,6 +8738,12 @@
         "initials": "GL",
         "number": 33,
         "hue": 258
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7782,6 +8790,12 @@
         "initials": "WG",
         "number": 3,
         "hue": 129
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7828,6 +8842,12 @@
         "initials": "NK",
         "number": 31,
         "hue": 301
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7874,6 +8894,12 @@
         "initials": "NP",
         "number": 25,
         "hue": 60
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7920,6 +8946,12 @@
         "initials": "EF",
         "number": 11,
         "hue": 349
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -7940,7 +8972,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 173,
-          "rating": 75.0,
+          "rating": 75,
           "stars": 3,
           "reportedVia": "in-game"
         }
@@ -7966,6 +8998,12 @@
         "initials": "ID",
         "number": 45,
         "hue": 198
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8012,6 +9050,12 @@
         "initials": "FE",
         "number": 45,
         "hue": 252
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8058,6 +9102,12 @@
         "initials": "KK",
         "number": 20,
         "hue": 332
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8104,6 +9154,12 @@
         "initials": "DM",
         "number": 0,
         "hue": 49
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8150,6 +9206,12 @@
         "initials": "DM",
         "number": 35,
         "hue": 40
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8196,6 +9258,12 @@
         "initials": "ZZ",
         "number": 20,
         "hue": 276
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8242,6 +9310,12 @@
         "initials": "VS",
         "number": 34,
         "hue": 247
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8262,7 +9336,7 @@
         {
           "source": "Dynasty Scouts",
           "rank": 180,
-          "rating": 74.0,
+          "rating": 74,
           "stars": 3,
           "reportedVia": "in-game"
         }
@@ -8288,6 +9362,12 @@
         "initials": "JH",
         "number": 22,
         "hue": 261
+      },
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
       }
     },
     {
@@ -8462,8 +9542,14 @@
         "Bag Work": 94,
         "Basketball IQ": 95
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
-      "photo": null
+      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "photo": null,
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
+      }
     },
     {
       "id": "fictional-2027-micah-sato",
@@ -8497,8 +9583,14 @@
         "Bag Work": 91,
         "Basketball IQ": 87
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
-      "photo": null
+      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "photo": null,
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
+      }
     },
     {
       "id": "fictional-2027-darius-okafor",
@@ -8532,8 +9624,14 @@
         "Bag Work": 88,
         "Basketball IQ": 89
       },
-      "ratingsMethod": "Fictional gameplay ratings created for 82\u20130: AAU Dynasty. This is not a real recruit or a published scouting grade.",
-      "photo": null
+      "ratingsMethod": "Fictional gameplay ratings created for 82–0: AAU Dynasty. This is not a real recruit or a published scouting grade.",
+      "photo": null,
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Class of 2027"
+        ]
+      }
     },
     {
       "id": "dyn-2027-jalen-cross",
@@ -8598,7 +9696,7 @@
       "nickname": "Pocket Rocket",
       "classYear": 2029,
       "position": "PG",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "Oakland, CA",
       "height": "Not reported",
       "weight": null,
@@ -8626,7 +9724,13 @@
         "Bag Work": 88,
         "Basketball IQ": 75
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-renzo-vega",
@@ -8634,7 +9738,7 @@
       "nickname": "Velvet",
       "classYear": 2029,
       "position": "SG",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "San Diego, CA",
       "height": "Not reported",
       "weight": null,
@@ -8662,7 +9766,13 @@
         "Bag Work": 81,
         "Basketball IQ": 82
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-jabari-quinn",
@@ -8670,7 +9780,7 @@
       "nickname": "Skyline",
       "classYear": 2029,
       "position": "SF",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "Chicago, IL",
       "height": "Not reported",
       "weight": null,
@@ -8698,7 +9808,13 @@
         "Bag Work": 76,
         "Basketball IQ": 69
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-milo-tanaka",
@@ -8706,7 +9822,7 @@
       "nickname": "Professor",
       "classYear": 2029,
       "position": "PG",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "Sacramento, CA",
       "height": "Not reported",
       "weight": null,
@@ -8734,7 +9850,13 @@
         "Bag Work": 89,
         "Basketball IQ": 96
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-solomon-price",
@@ -8742,7 +9864,7 @@
       "nickname": "Redwood",
       "classYear": 2029,
       "position": "C",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "Oakland, CA",
       "height": "Not reported",
       "weight": null,
@@ -8770,7 +9892,13 @@
         "Bag Work": 82,
         "Basketball IQ": 88
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-cruz-delgado",
@@ -8778,7 +9906,7 @@
       "nickname": "Bulldozer",
       "classYear": 2029,
       "position": "PF",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "Fresno, CA",
       "height": "Not reported",
       "weight": null,
@@ -8806,7 +9934,13 @@
         "Bag Work": 84,
         "Basketball IQ": 74
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "circuit-2027-owen",
@@ -8814,7 +9948,7 @@
       "nickname": "Round Mound",
       "classYear": 2029,
       "position": "C",
-      "school": "Circuit Originals \u00b7 Fictional",
+      "school": "Circuit Originals · Fictional",
       "hometown": "NorCal",
       "height": "Not reported",
       "weight": null,
@@ -8842,7 +9976,13 @@
         "Bag Work": 80,
         "Basketball IQ": 83
       },
-      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade."
+      "ratingsMethod": "Original fictional gameplay ratings for AAU Dynasty. Not a real athlete or published scouting grade.",
+      "art": {
+        "versions": 1,
+        "titles": [
+          "Circuit Originals"
+        ]
+      }
     },
     {
       "id": "concrete-2027-kai-mori",

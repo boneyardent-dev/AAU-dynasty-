@@ -2,8 +2,8 @@
 // A player's `art` field ({versions, titles}) is set by scripts/generate-fictional-players.py from the files on disk.
 const AAU_CROWN='<svg class="aau-crown" viewBox="0 0 28 20" aria-hidden="true"><path d="M2 18 4 5l6 6 4-9 4 9 6-6 2 13z"/></svg>';
 const aauVer={};
-function aauArtUrl(p,v){const A=typeof window!=='undefined'&&window.AAU_ART&&window.AAU_ART[p.id];return A?(A[v-1]||A[0]):'/cards/'+p.id+(v>1?'-v'+v:'')+'.webp'}
-function aauImg(p,v=1){const c=p.catalog;return c&&c.art&&c.art.versions?`<img class="aau-img" alt="" loading="lazy" decoding="async" src="${aauArtUrl(p,v)}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">`:''}
+function aauArtUrl(p,v){const art=typeof AAU_PLAYER_ART!=='undefined'?AAU_PLAYER_ART[p.id]:null;const A=typeof window!=='undefined'&&window.AAU_ART&&window.AAU_ART[p.id];return A?(A[v-1]||A[0]):art?(art.versions[v-1]||art.src):'/cards/'+p.id+(v>1?'-v'+v:'')+'.webp'}
+function aauImg(p,v=1){const c=p.catalog;return (typeof AAU_PLAYER_ART!=='undefined'&&AAU_PLAYER_ART[p.id])||(c&&c.art&&c.art.versions)?`<img class="aau-img" alt="${escapeHtml(p.n)} player artwork" loading="lazy" decoding="async" src="${aauArtUrl(p,v)}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">`:''}
 function aauVersion(p){const art=(p.catalog&&p.catalog.art)||{},n=art.versions||1;return Math.max(1,Math.min(n,aauVer[p.id]||art.defaultVersion||1))}
 function aauTier(p,ovr){const n=(p.catalog&&p.catalog.art&&p.catalog.art.versions)||1;return n>1?aauVersion(p):ovr>=87?3:ovr>=80?2:1}
 function aauCard(p,o={}){const c=p.catalog||{},values=o.values||cardAttributes(p),ovr=cardOvr(values),ph=physProfile(p),v=aauVersion(p),tier=aauTier(p,ovr),rar=o.rarity?String(o.rarity):'',cls=(rar?'aau-r-'+rar.toLowerCase().replace(/[^a-z]/g,''):'aau-t'+tier)+(c.originalSeries==='concrete-royalty-v1'?' aau-concrete':''),
@@ -12,7 +12,7 @@ function aauCard(p,o={}){const c=p.catalog||{},values=o.values||cardAttributes(p
  nfs=Math.min(12.5,12.5*11/Math.max(11,name.length)),size=physFmt(ph.inches)+' \u00B7 '+ph.lbs+' lbs'+(ph.hKnown&&ph.wKnown?'':' (est.)'),
  bar=(n,x)=>`<div class="aau-stat"><div><span>${n}</span><b>${x}</b></div><i><u style="width:${Math.round((x-40)/59*100)}%"></u></i></div>`;
  return `<div class="aau-card ${cls}" role="button" tabindex="0" aria-label="${escapeHtml(name)}, ${rar?escapeHtml(rar)+', ':''}${ovr} overall, ${escapeHtml(pos)}. Press to flip."><div class="aau-tilt"><div class="aau-inner">
- <div class="aau-face aau-front"><div class="aau-foil"></div><div class="aau-art"><div class="aau-mono">${escapeHtml(ini)}</div><small>ART COMING SOON</small>${aauImg(p,v)}<div class="aau-holo"></div><div class="aau-glare"></div></div>
+ <div class="aau-face aau-front"><div class="aau-foil"></div><div class="aau-art"><div class="aau-mono">${escapeHtml(ini)}</div><small>AAU DYNASTY</small>${aauImg(p,v)}<div class="aau-holo"></div><div class="aau-glare"></div></div>
  <div class="aau-badge"><b>${ovr}</b><span>${escapeHtml(pos)}</span></div>${AAU_CROWN}${rar?`<div class="aau-rar">${escapeHtml(rar)}</div>`:''}
  <div class="aau-plate"><div class="aau-nm" style="--nfs:${nfs.toFixed(1)}cqw">${escapeHtml(name)}</div><div class="aau-rib"><i>${escapeHtml(title)}</i></div></div></div>
  <div class="aau-face aau-back"><svg viewBox="0 0 28 20" aria-hidden="true"><path d="M2 18 4 5l6 6 4-9 4 9 6-6 2 13z"/></svg><h3>${escapeHtml(name)}</h3><div class="aau-sub">${escapeHtml(pos)} \u00B7 ${escapeHtml(c.archetype||p.r||'')}</div><div class="aau-sub" style="margin:0 0 3cqw">${escapeHtml(size)}</div>

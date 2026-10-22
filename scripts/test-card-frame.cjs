@@ -8,7 +8,7 @@ const card=p=>{ctx.__p=p;return vm.runInContext('aauCard(__p)',ctx)};
 let h=card(mk());
 assert(/aau-t2/.test(h)&&/>80</.test(h),'80 overall is tier 2');assert(/aau-t1/.test(card(mk({top:{vals:[70,70,70,70,70,70]}}))),'low overall is tier 1');assert(/aau-t3/.test(card(mk({top:{vals:[90,90,90,90,90,90]}}))),'high overall is tier 3');
 assert(/Test Player/.test(h)&&/Floor General/.test(h)&&/PG/.test(h)&&/Strength/.test(h)&&/Speed/.test(h)&&/Rebounding/.test(h),'front and back content');
-assert(/ART COMING SOON/.test(h)&&!/<img/.test(h),'no art file means monogram only, no image request');
+assert(/AAU DYNASTY/.test(h)&&!/<img/.test(h),'no art file means monogram only, no image request');
 assert(/aria-label="Test Player, 80 overall, PG/.test(h)&&/tabindex="0"/.test(h)&&/role="button"/.test(h),'accessible');
 const art=mk({catalog:{art:{versions:3,titles:['After Hours','Concrete Royalty','Arrival']}}});
 h=card(art);assert(/<img class="aau-img"[^>]*src="\/cards\/x1\.webp"/.test(h)&&/After Hours/.test(h)&&/aau-t1/.test(h),'version 1 art, title, tier');
@@ -22,5 +22,5 @@ ctx.__p=mk();for(const r of ['Common','Uncommon','Rare','Epic','Legendary','Myth
 const seed=JSON.parse(fs.readFileSync(root+'data/players.json','utf8')).players,j=seed.find(p=>p.id==='dyn-2027-jalen-cross');
 assert(j&&j.art.versions===3&&j.art.titles.length===3,'sample player has three art versions');
 for(const n of ['dyn-2027-jalen-cross','dyn-2027-jalen-cross-v2','dyn-2027-jalen-cross-v3'])assert(fs.existsSync(root+'public/cards/'+n+'.webp'),n+' art file exists');
-assert(seed.filter(p=>p.art).length===6,'only the six illustrated Concrete Royalty players are flagged with art');
+assert(seed.filter(p=>p.art).length===seed.filter(p=>p.isFictional).length,'every fictional catalog player is flagged with art');
 console.log('PASS: tiers, six rarities, content, accessibility, no-art fallback, art versions and chips, escaping, long names, inline art map, seed flags and files.');
