@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),catalog=JSON.parse(fs.readFileSync(path.
 const cast=catalog.players.filter(p=>p.originalSeries==='concrete-royalty-v1');
 assert.deepEqual(cast.map(p=>p.name).sort(),['Darius Vale','Jalen Cross','Kai Mori','Malik Okafor','Mateo Reyes','Owen Brooks'].sort(),'Concrete Royalty is a six-player collectible series');
 assert(cast.every(p=>p.isFictional&&p.gameRatings&&p.signatureAbility&&p.art?.versions),'every original has fictional status, gameplay ratings, a signature ability, and card art');
-for(const p of cast){const versions=p.art.versions;for(let v=1;v<=versions;v++){const suffix=v===1?'':`-v${v}`;assert(fs.existsSync(path.join(root,'public/cards',p.id+suffix+'.webp')),`${p.name} card portrait exists`);}}
+for(const p of cast){const versions=p.art.versions;for(let v=1;v<=versions;v++){const suffix=v===1?'':`-v${v}`;const portrait=path.join(root,'public/cards',p.id+suffix+'.webp');assert(fs.existsSync(portrait)&&fs.statSync(portrait).size>1000,`${p.name} card portrait is present and non-empty`);}}
 assert.equal(cast.find(p=>p.id==='dyn-2027-jalen-cross').art.defaultVersion,2,'Jalen uses the Concrete Royalty art variant by default');
 const pack=fs.readFileSync(path.join(root,'public/pack-premium.js'),'utf8'),api=fs.readFileSync(path.join(root,'app/api/players/route.ts'),'utf8');
 assert(pack.includes("id:'concrete-royalty',name:'CONCRETE ROYALTY'"),'the featured drop is registered');
