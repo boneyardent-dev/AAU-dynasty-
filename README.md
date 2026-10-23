@@ -17,12 +17,12 @@ Run `node <plugin-root>/scripts/configure-execution-profile.mjs` only when the p
 
 This starter does not use `wrangler.jsonc`.
 
-`install:ci` runs `npm ci` once against the shared lockfile, disables parent-workspace discovery, and includes required dev/optional dependencies despite production/omit settings. Sharp defaults to prebuilt binaries unless explicitly configured otherwise. Do not overlap installers.
+`npm run install:ci` installs with the exact pnpm version pinned in `package.json` (currently 11.25.0). Corepack must be on PATH for the portable Mac installer. It runs `pnpm install --frozen-lockfile --prod=false --prefer-offline`, retaining `pnpm-lock.yaml`, optional platform dependencies, and the `pnpm-workspace.yaml` build-script allowlist and supply-chain policy. Do not overlap installers or replace the lockfile with an npm lockfile.
 
-- **Portable:** Preserve host HOME, npm cache, registry, proxy, temporary paths, retry/concurrency settings, and lifecycle-script policy. Use `--prefer-offline --no-audit --no-fund`.
-- **Managed Linux:** Use the existing project-local HOME/cache/tmp setup and Linux install lock, tarball preflight, and timeout. Restore the image-seeded npm cache only when its lockfile hash matches; retain network fallback. Builds keep their existing timeout. These helpers are not invoked by the portable profile.
+- **Portable (Mac):** Uses Corepack without Bash, Linux `flock`, or GNU `timeout`; preserves the host HOME, registry, proxy and environment. The workspace lists the project root explicitly. The pnpm store and policy cache default to ignored `.sites-runtime/pnpm-store`.
+- **Managed Linux:** Retains `scripts/install-pnpm.sh`, including its project lock, pinned pnpm, store preparation and install timeout. It is selected only by the local execution profile.
 
-`scripts/sites-env.mjs` preserves the caller's HOME, npm cache, proxy, XDG, and temporary-directory configuration while defaulting Wrangler and Miniflare state to the checkout. If npm reports an unwritable cache, select a writable path with `npm_config_cache` for that install. The `dev` and `start` scripts also keep Wrangler logs inside the checkout. Generated `.sites-runtime/` and `.wrangler/` directories are disposable and ignored by Git.
+`scripts/sites-env.mjs` preserves the caller's HOME, npm cache, proxy, XDG, and temporary-directory configuration while defaulting Wrangler and Miniflare state to the checkout. For a pnpm store permission error, check the configured store path in `pnpm-workspace.yaml`. The `dev` and `start` scripts also keep Wrangler logs inside the checkout. Generated `.sites-runtime/` and `.wrangler/` directories are disposable and ignored by Git.
 
 On portable, `npm run dev` uses `vinext dev` with HMR, starting at port 5173. Vinext records the running server in ignored `.vinext/` state, rejects an ordinary duplicate launch, and recovers stale state after a stopped process; exactly simultaneous starts can race. Pass `--port <port>` or `--hostname <host>` after `npm run dev --` when needed; keep portable previews on loopback.
 

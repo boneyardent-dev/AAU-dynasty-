@@ -53,7 +53,8 @@
 .pr-summary-rarity{min-height:20px;font-size:clamp(6px,.85vw,9px);font-weight:900;letter-spacing:.07em;color:#293c50}
 .pr-silver-card{width:100%;min-width:0;padding:5px;border:0;border-radius:5px;box-shadow:none;background:transparent}
 .pr-silver-card .player-photo-frame,.pr-silver-card .portrait-initials,.pr-silver-card .fictional-portrait,.pr-silver-card .portrait{height:clamp(72px,11vw,130px);border-radius:4px}
-.pr-silver-card .player-photo{height:100%;object-fit:cover;object-position:center 23%;border-radius:4px}
+/* Anchor portrait crops at the top so compact cards preserve faces and hair. */
+.pr-silver-card .player-photo{height:100%;object-fit:cover;object-position:center top;border-radius:4px}
 .pr-silver-card .fictional-portrait{font-size:clamp(32px,5vw,58px)}
 .pr-silver-card .fictional-portrait small{font-size:5px}
 .pr-silver-card .card-topline{margin-top:4px}
