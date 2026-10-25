@@ -45,7 +45,8 @@ header{display:flex;justify-content:space-between;align-items:center;border-bott
 @media(max-width:600px){.team.program-team{min-height:215px;padding:16px 10px}.program-logo{height:145px}.program-team h3{font-size:15px}.program-select-state{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.team.program-team{transition:none}.team.program-team:hover,.team.program-team.on{transform:none}}
 </style>
-<link rel="stylesheet" href="/circuit.css"></head><body><div id="app"></div>
+<link rel="stylesheet" href="/circuit.css"><link rel="stylesheet" href="/player-development.css"><link rel="stylesheet" href="/player-traits.css">
+</head><body><div id="app"></div>
 <script>
 const players=[
 {id:'marcus',n:'Marcus Reed',r:'Floor General',p:'G',e:'🧠',s:76,pa:94,d:77,q:95,a:78},{id:'eli',n:'Eli Navarro',r:'Deadeye Shooter',p:'G',e:'🎯',s:96,pa:72,d:66,q:79,a:74},{id:'jaylen',n:'Jaylen Brooks',r:'Two-Way Guard',p:'G/W',e:'⚡',s:81,pa:82,d:88,q:84,a:89},{id:'noah',n:'Noah Kim',r:'Change-of-Pace Guard',p:'G',e:'💨',s:75,pa:84,d:72,q:78,a:94},{id:'darius',n:'Darius King',r:'3-and-D Wing',p:'W',e:'🛡️',s:84,pa:70,d:93,q:83,a:81},{id:'malik',n:'Malik Carter',r:'Shot-Creating Wing',p:'W',e:'🔥',s:88,pa:77,d:73,q:80,a:86},{id:'andre',n:'Andre Wallace',r:'Utility Wing',p:'W/B',e:'🔧',s:77,pa:80,d:82,q:89,a:79},{id:'ty',n:'Ty Washington',r:'Rim Runner',p:'B',e:'🚀',s:63,pa:65,d:86,q:73,a:97},{id:'mason',n:'Mason Price',r:'Stretch Big',p:'B/W',e:'📡',s:85,pa:68,d:78,q:82,a:72},{id:'cam',n:'Cameron Ellis',r:'Paint Anchor',p:'B',e:'🧱',s:59,pa:71,d:96,q:85,a:68},{id:'trey',n:'Trey Johnson',r:'Energy Defender',p:'W',e:'🔒',s:69,pa:75,d:91,q:81,a:91},{id:'lucas',n:'Lucas Grant',r:'Skilled Connector',p:'G/W',e:'🪄',s:82,pa:88,d:76,q:91,a:76}
@@ -247,7 +248,7 @@ trainingSession=function(trainerId,playerId){const before=D.points;missionTraini
 const missionFinishWeekendBase=finishWeekend;
 finishWeekend=function(champ){if(champ)D.championships=(D.championships||0)+1;missionFinishWeekendBase(champ)};
 window.AAU_ARCHETYPES=__AAU_ARCHETYPE_DATA__;
-</script><script src="/player-art.js"></script><script src="/draft.js"></script><script src="/lineup-form.js"></script><script src="/interface.js"></script><script src="/recruiting.js"></script><script src="/recruiting-reference.js"></script><script src="/pack-premium.js"></script><script src="/circuit.js"></script><script src="/playbook.js"></script><script src="/retention.js"></script><script src="/leaderboard.js"></script><script src="/physical.js"></script><script src="/card-frame.js"></script><script src="/account.js"></script><script src="/vault.js"></script><script>
+</script><script src="/player-art.js"></script><script src="/draft.js"></script><script src="/lineup-form.js"></script><script src="/interface.js"></script><script src="/recruiting.js"></script><script src="/recruiting-reference.js"></script><script src="/pack-premium.js"></script><script src="/circuit.js"></script><script src="/playbook.js"></script><script src="/retention.js"></script><script src="/leaderboard.js"></script><script src="/physical.js"></script><script src="/card-frame.js"></script><script src="/account.js"></script><script src="/vault.js"></script><script src="/player-development.js"></script><script src="/player-traits.js"></script><script>
 if(legacyProgramSelection)saveAll();
 bootCatalog();
 </script></body></html>

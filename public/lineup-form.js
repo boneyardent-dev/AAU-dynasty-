@@ -88,9 +88,10 @@ function simulationGuide(){return `<details class="box sim-guide"><summary>How g
 function confirmPregame(){
   if(S.screen!=='pregame'||!validFive(lineupDraft))return;
   S.five=[...lineupDraft];const rolls={};S.pick.forEach(id=>rolls[id]=.75+Math.random()*.5);
+  const traits=typeof preparePlayerTraits==='function'?preparePlayerTraits(rolls):null;
   const parts=strengthParts(),execution=S.five.reduce((n,id)=>n+(rolls[id]-1)*12,0)/5,opponent=S.opp.o*.42+S.opp.d*.36+S.opp.q*.22;
   const approach=approachEffect(),delta=parts.total+execution+approach-opponent,noise=Math.random()*11-5.5,gap=Math.round(delta*.3+noise),extraUs=Math.floor(Math.random()*4),extraThem=Math.floor(Math.random()*4);
-  S.simulation={parts,execution,opponent,delta,approach,openingFive:[...S.five],rolls,firstNoise:noise,firstGap:gap,extraUs,extraThem,formAtTip:Object.fromEntries(S.pick.map(id=>[id,formBonus(id)]))};
+  S.simulation={parts,execution,opponent,delta,approach,traits,openingFive:[...S.five],rolls,firstNoise:noise,firstGap:gap,extraUs,extraThem,formAtTip:Object.fromEntries(S.pick.map(id=>[id,formBonus(id)]))};
   S.half={us:34+Math.max(gap,0)+extraUs,them:34+Math.max(-gap,0)+extraThem};saveAll();halftime();
 }
 const boxBeforeForm=buildBoxScore;
@@ -112,17 +113,19 @@ baseFinishGameImpl=function(call){
   if(plan.rotation)S.five=[...plan.rotation.ids];
   const closingParts=strengthParts(),closingExecution=S.five.reduce((n,id)=>n+((sim.rolls[id]||1)-1)*12,0)/5;
   const closingApproach=approachEffect(),closingDelta=closingParts.total+closingExecution+closingApproach-sim.opponent,boost=plan.boost;
-  const noise=Math.random()*9-4.5,gap=Math.round(closingDelta*.2+noise+boost);
+  const traitMargin=typeof traitClosingMargin==='function'?traitClosingMargin(sim,call):0;
+  const noise=Math.random()*9-4.5,gap=Math.round(closingDelta*.2+noise+boost+traitMargin);
   let us=S.half.us+32+Math.max(gap,0),them=S.half.them+32+Math.max(-gap,0),overtime=null;
   if(us===them){overtime=Math.random()<.5?'you':'opponent';if(overtime==='you')us++;else them++;}
   const changes=S.pick.map(id=>advancePlayerForm(id,sim.rolls[id]));
-  S.game={us,them,win:us>them,call,simulation:{...sim,openingFive,closingFive:[...S.five],closingParts,closingExecution,closingApproach,closingDelta,rotation:plan.rotation?{incoming:plan.rotation.incoming,outgoing:plan.rotation.outgoing}:null,secondNoise:noise,secondGap:gap,boost,overtime},formChanges:changes};recordGameStats();
+  S.game={us,them,win:us>them,call,simulation:{...sim,openingFive,closingFive:[...S.five],closingParts,closingExecution,closingApproach,closingDelta,rotation:plan.rotation?{incoming:plan.rotation.incoming,outgoing:plan.rotation.outgoing}:null,secondNoise:noise,secondGap:gap,boost,traitMargin,overtime},formChanges:changes};recordGameStats();
   const tax=tactics.find(t=>t.id===S.tactic).tax;
   S.pick.forEach(id=>{
     if(typeof availablePlayer==='function'&&!availablePlayer(id))return;
     const first=openingFive.includes(id)?(13+tax)/2:3;
     const second=S.five.includes(id)?(13+tax)/2+plan.extraTax:3;
-    S.energy[id]=Math.max(0,Math.min(100,energyBefore[id]-first-second));
+    const personalityTax=typeof traitFatigue==='function'?traitFatigue(id,openingFive,S.five):0;
+    S.energy[id]=Math.max(0,Math.min(100,energyBefore[id]-first-second-personalityTax));
   });
   S.game.simulation.energySpent=Object.fromEntries(S.pick.map(id=>[id,energyBefore[id]-S.energy[id]]));
   result();

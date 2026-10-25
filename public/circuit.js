@@ -47,7 +47,7 @@ finishGame=function(call){const before=S.statLog.length,energy={...S.energy};cir
  S.pick.filter(id=>!playing.includes(id)).forEach(id=>{if(energy[id]!==undefined)S.energy[id]=energy[id];else delete S.energy[id]});
  circuitPost('game:'+g.id,'FINAL BUZZER',`${g.team} ${g.win?'beats':'falls to'} ${g.opponent}, ${g.us}–${g.them}.`);
  if(best)circuitPost('star:'+g.id,S.five.includes(best.playerId)?'PLAYER SPOTLIGHT':'BENCH SPARK',`${best.name}: ${best.pts} points, ${best.reb} rebounds, ${best.ast} assists.`);
- for(const id of playing){const s=scoutState(id,true);s.seen+=inventoryRead().activeCoach==='scout'?2:1;s.games=(s.games||0)+1;if(s.games%3===0){const roll=circuitHash(s.seed+':'+s.games)%10,change=roll<5?1:roll<8?0:-1,old=s.delta;s.delta=Math.max(-6,Math.min(2+s.seed%11,s.delta+change));s.history.push({game:s.games,change:s.delta-old});s.history=s.history.slice(-12);if(s.delta>old)circuitPost('growth:'+id+':'+s.games,'STOCK UP',player(id).n+' is making progress. Your staff has logged a development gain.')}}
+ for(const id of playing){const s=scoutState(id,true);s.seen+=inventoryRead().activeCoach==='scout'?2:1;s.games=(s.games||0)+1;if(s.games%3===0&&typeof awardDevelopmentGame!=='function'){const roll=circuitHash(s.seed+':'+s.games)%10,change=roll<5?1:roll<8?0:-1,old=s.delta;s.delta=Math.max(-6,Math.min(2+s.seed%11,s.delta+change));s.history.push({game:s.games,change:s.delta-old});s.history=s.history.slice(-12);if(s.delta>old)circuitPost('growth:'+id+':'+s.games,'STOCK UP',player(id).n+' is making progress. Your staff has logged a development gain.')}}
  const rank=1+opponents.filter(p=>p.o>rating()).length;
  if(D.circuitRank!==undefined&&rank!==D.circuitRank)circuitPost('rank:'+g.id,'POWER RANKINGS',(programs[S.team]?.n||'Your program')+' moves from #'+D.circuitRank+' to #'+rank+' among '+(opponents.length+1)+' circuit teams.');
  D.circuitRank=rank;saveAll();result();
@@ -58,9 +58,7 @@ const circuitMini=prMiniCard;
 prMiniCard=function(card){let html=circuitMini(card);if(card.specialEdition)html=html.replace('pr-silver-card','pr-silver-card circuit-edition edition-'+card.rarity.toLowerCase()).replace('SILVER FOIL',escapeHtml(card.specialEdition));return html};
 const circuitSilver=silverCard;
 silverCard=function(card,...args){let html=circuitSilver(card,...args);if(card.specialEdition)html=html.replace('silver-card rarity-','silver-card circuit-edition rarity-').replace('SILVER FOIL · SERIES 01',escapeHtml(card.specialEdition));return html};
-// Bonus support is committed atomically with the five-card pack, never during presentation.
-const circuitStage=prStage;
-prStage=function(c){let html=circuitStage(c);if(c.last?.bonusSupport&&c.last.cards?.every(x=>x.revealed)&&PR.activeRevealIndex===null)html+=`<section class="box"><div class="kicker">BONUS SUPPORT CARD · SAVED</div>${supportArt(c.last.bonusSupport,c.support?.[c.last.bonusSupport]||0)}<button class="btn" onclick="supportRoom()">Use support cards →</button></section>`;return html};
+// Bonus rewards are committed with the pack; pack-premium.js handles their reveal and summary.
 const circuitHome=home;
 home=function(){circuitHome();app.querySelector('main')?.insertAdjacentHTML('afterbegin',circuitLinks())};
 const circuitCollection=myCollection;

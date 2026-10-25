@@ -10,7 +10,7 @@ async function setup(){const t=create();await run(t.context,'bootCatalog()');run
  run(c,"finishGame('bench')");
  assert.deepEqual(json(c,'S.five'),rotation.ids);
  assert(!run(c,`S.five.includes('${rotation.outgoing}')`));
- assert.equal(run(c,`S.game.simulation.energySpent['${rotation.outgoing}']`),run(c,`S.game.simulation.energySpent['${rotation.incoming}']`),'one half each charges equal fatigue');
+ assert.equal(run(c,`S.game.simulation.energySpent['${rotation.outgoing}']-(S.game.simulation.traits?.players['${rotation.outgoing}'].fatigue||0)`),run(c,`S.game.simulation.energySpent['${rotation.incoming}']-(S.game.simulation.traits?.players['${rotation.incoming}'].fatigue||0)`),'one half each charges equal base fatigue before personality costs');
  assert(run(c,`S.game.simulation.energySpent['${rotation.outgoing}']<S.game.simulation.energySpent[S.five.find(id=>S.game.simulation.openingFive.includes(id))]`));
  assert.deepEqual(json(c,'S.statLog[0].starters'),opening);
  assert.equal(run(c,'S.game.boxScore.players.reduce((n,p)=>n+p.pts,0)'),run(c,'S.game.us'));
@@ -28,7 +28,7 @@ async function setup(){const t=create();await run(t.context,'bootCatalog()');run
  const rested=json(ac,'Object.fromEntries(S.pick.filter(id=>!S.five.includes(id)).map(id=>[id,playerEnergy(id)]))');
  run(ac,"finishGame('pressure')");
  for(const [id,energy] of Object.entries(rested)){assert.equal(run(ac,`playerEnergy('${id}')`),energy);assert.equal(run(ac,`S.game.simulation.energySpent['${id}']`),0);}
- assert(run(ac,'S.five.every(id=>S.game.simulation.energySpent[id]===19+tactics.find(t=>t.id===S.tactic).tax)'));
+ assert(run(ac,'S.five.every(id=>S.game.simulation.energySpent[id]===19+tactics.find(t=>t.id===S.tactic).tax+(S.game.simulation.traits?.players[id].fatigue||0))'));
  // Complete an entire weekend and bracket using isolated state, preserving reward cadence.
  const w=await setup(),wc=w.context;
  run(wc,"finishGame('calm');advanceGame();tipOff();confirmPregame();finishGame('pressure');advanceGame();tipOff();confirmPregame();finishGame('star');advanceGame()");

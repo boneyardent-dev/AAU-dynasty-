@@ -36,5 +36,11 @@ const {create,run,json}=require('./verify-draft.cjs');
  r('S.screen="packs";PR.phase="idle"');await r('prCommitFiveCards()');
  assert.equal(r('inventoryRead().last.cards.length'),5);
  assert(r('!!inventoryRead().last.bonusSupport'));
+ const bonusCountBefore=r('inventoryRead().support[inventoryRead().last.bonusSupport]');
+ await r('prSkipReveal()');assert.equal(r('inventoryRead().last.bonusRevealed'),true);
+ await r('syncAccountSave()');const restoredPack=create(new Map(t.storage),t.remote);await run(restoredPack.context,'bootCatalog()');
+ assert.equal(run(restoredPack.context,'inventoryRead().last.bonusRevealed'),true,'Account restoration preserves bonus reveal');
+ assert.equal(run(restoredPack.context,'inventoryRead().support[inventoryRead().last.bonusSupport]'),bonusCountBefore,'Account restore does not grant bonus again');
+
  console.log('PASS: eligible five; absent-player stats excluded; conserved scoring; private attendance; event feed; trainer consumption/effect; coach equip; accelerated scouting; account restore; five-player plus support pack.');
 })().catch(e=>{console.error(e);process.exit(1)});
