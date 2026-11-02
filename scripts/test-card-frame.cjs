@@ -24,3 +24,15 @@ assert(j&&j.art.versions===3&&j.art.titles.length===3,'sample player has three a
 for(const n of ['dyn-2027-jalen-cross','dyn-2027-jalen-cross-v2','dyn-2027-jalen-cross-v3'])assert(fs.existsSync(root+'public/cards/'+n+'.webp'),n+' art file exists');
 assert(seed.filter(p=>p.art).length===seed.filter(p=>p.isFictional).length,'every fictional catalog player is flagged with art');
 console.log('PASS: tiers, six rarities, content, accessibility, no-art fallback, art versions and chips, escaping, long names, inline art map, seed flags and files.');
+// The edition hierarchy is explicit on both faces and does not depend on OVR.
+ctx.__p=mk({top:{vals:[95,95,95,95,95,95]}});
+for(const [index,r] of ['Common','Uncommon','Rare','Epic','Legendary','Mythic'].entries()){
+ const x=vm.runInContext(`aauCard(__p,{rarity:'${r}'})`,ctx);
+ assert(x.includes('TIER '+(index+1)+' / 6'),'visible tier number on '+r);
+ assert.equal(x.includes('class="aau-crown"'),index>=4,'front crown reserved for elite editions');
+ assert.equal(x.includes('ELITE · '),index>=4,'elite stamp belongs to Legendary/Mythic');
+ assert(x.includes('>95<'),'rarity does not alter overall');
+ const staticCard=vm.runInContext(`aauCard(__p,{rarity:'${r}',interactive:false})`,ctx);
+ assert(staticCard.includes('role="img" data-static="true"')&&!staticCard.includes('tabindex="0"'),'pack fronts do not create nested flip buttons');
+}
+console.log('PASS: explicit six-tier hierarchy, elite-only crown/stamp, fixed ratings, noninteractive pack fronts.');

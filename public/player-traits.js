@@ -68,6 +68,7 @@ function traitFatigue(id,opening,closing){
  if(!row)return 0;
  const share=(Number(opening.includes(id))+Number(closing.includes(id)))/2;
  const extra=(row.ids.includes('hustler')?1:0)+(row.ids.includes('jumpy')?1:0)+(row.ids.includes('hates-cardio')?(['pace','press'].includes(S.tactic)?3:1):0)+(row.ids.includes('hacker')&&S.tactic==='press'?1:0);
+ row.fatigueByTrait={};for(const trait of row.ids){const cost=trait==='hustler'||trait==='jumpy'?1:trait==='hates-cardio'?(['pace','press'].includes(S.tactic)?3:1):trait==='hacker'&&S.tactic==='press'?1:0;if(cost)row.fatigueByTrait[trait]=cost*share;}
  row.fatigue=extra*share;return row.fatigue;
 }
 const traitsBox=buildBoxScore;
@@ -79,7 +80,7 @@ buildBoxScore=function(us,them){
   if(key==='blk'&&ids.includes('jumpy'))n*=1.15;
   if(key==='stl'&&ids.includes('hacker')&&S.tactic==='press')n*=snapshot?.players?.[row.playerId]?.firstAdjustment<0?.85:1.15;
   return n;};
- for(const key of ['reb','stl','blk']){if(!rows.some(row=>factor(row,key)!==1))continue;const allocated=statAllocation(box.totals[key],rows,row=>row[key]*factor(row,key));rows.forEach((row,i)=>row[key]=allocated[i]);}
+ for(const key of ['reb','stl','blk']){if(!rows.some(row=>factor(row,key)!==1))continue;const allocated=statAllocation(box.totals[key],rows,row=>row[key]*factor(row,key));rows.forEach((row,i)=>{const entry=snapshot?.players?.[row.playerId];if(entry){entry.statChanges=entry.statChanges||{};entry.statChanges[key]=allocated[i]-row[key];}row[key]=allocated[i];});}
  rows.forEach(row=>row.traits=[...(snapshot?.players?.[row.playerId]?.ids||playerTraitIDs(row.playerId))]);return box;
 };
 const traitsDevelopmentCard=developmentCard;
@@ -98,12 +99,12 @@ function playerTraitsRoom(){
 const traitsHalftime=halftime;
 halftime=function(){traitsHalftime();const sim=S.simulation;if(!sim?.traits)return;
  const notes=S.five.flatMap(id=>{const ids=sim.traits.players[id]?.ids||[];return ids.some(key=>['clutch','nervous','crashout','hates-cardio'].includes(key))?[`<p class="small"><b>${escapeHtml(player(id).n)}</b> · ${ids.map(key=>PLAYER_TRAITS[key].name).join(' / ')}</p>`]:[]});
- app.querySelector('main')?.insertAdjacentHTML('beforeend',`<section class="box trait-huddle"><h3>Know your closing group</h3>${notes.join('')||'<p class="small">Check player traits when planning your next rotation.</p>'}<p class="small">Clutch and Nervous respond to a halftime gap of 6 or fewer. Staying composed softens Nervous; it also steadies Crashout when trailing by 6 or more. High-energy approaches cost Hates Cardio more.</p></section>`);
+ app.querySelector('main')?.insertAdjacentHTML('beforeend',`<details class="box trait-huddle"><summary>Know your closing group</summary>${notes.join('')||'<p class="small">Check player traits when planning your next rotation.</p>'}<p class="small">Clutch and Nervous respond to a halftime gap of 6 or fewer. Staying composed softens Nervous; it also steadies Crashout when trailing by 6 or more. High-energy approaches cost Hates Cardio more.</p></details>`);
 };
 const traitsResult=result;
 result=function(){traitsResult();const sim=S.game?.simulation;if(!sim?.traits)return;
  const playing=new Set(S.game.boxScore.players.map(p=>p.playerId));
- app.querySelector('main')?.insertAdjacentHTML('beforeend',`<section class="box trait-recap"><div class="kicker">PERSONALITY IN PLAY</div><h3>Traits shaped the night.</h3><p class="small">Combined close-game response: ${sim.traits.closingMargin>=0?'+':''}${sim.traits.closingMargin.toFixed(1)} second-half margin (capped at ±2.5).</p><div class="dev-awards">${Object.entries(sim.traits.players).filter(([id])=>playing.has(id)).map(([id,row])=>`<div><b>${escapeHtml(player(id).n)}</b><span>${row.ids.map(key=>PLAYER_TRAITS[key].name).join(' · ')}</span><small>${[...row.notes,...(row.closingNotes||[])].join(' · ')||'No situational execution effect this game.'}${row.fatigue?' · '+row.fatigue.toFixed(1)+' extra energy':''}</small></div>`).join('')}</div></section>`);
+ app.querySelector('main')?.insertAdjacentHTML('beforeend',`<details class="box trait-recap"><summary>Full trait breakdown</summary><div class="kicker">PERSONALITY IN PLAY</div><p class="small">Combined close-game response: ${sim.traits.closingMargin>=0?'+':''}${sim.traits.closingMargin.toFixed(1)} second-half margin (capped at ±2.5).</p><div class="dev-awards">${Object.entries(sim.traits.players).filter(([id])=>playing.has(id)).map(([id,row])=>`<div><b>${escapeHtml(player(id).n)}</b><span>${row.ids.map(key=>PLAYER_TRAITS[key].name).join(' · ')}</span><small>${[...row.notes,...(row.closingNotes||[])].join(' · ')||'No situational execution effect this game.'}${row.fatigue?' · '+row.fatigue.toFixed(1)+' extra energy':''}</small></div>`).join('')}</div></details>`);
 };
 const traitsGuide=simulationGuide;
 simulationGuide=function(){return traitsGuide().replace('from 0.75–1.25','from 0.75–1.25 before trait adjustments (final range 0.60–1.40)').replace('</details>','<h3>Player traits</h3><p>Work habits affect training or fatigue. Court personalities can shift execution, defensive stat shares and close-game response. Trait margin effects are capped at ±2.5 in the second half. Individual effects are recorded in the postgame recap; permanent attributes and printed cards stay separate.</p></details>');};

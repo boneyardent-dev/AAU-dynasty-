@@ -1,0 +1,21 @@
+from pathlib import Path
+import re
+p=Path('chibi/base.html').read_text()
+three=Path('chibi/three.min.js').read_text()
+renderer=Path('chibi/software.js').read_text()+'\n'+Path('chibi/renderer.js').read_text()
+p=p.replace('<h1>Feel the finish.</h1>','<h1>Courtside. In 3D.</h1>')
+p=re.sub(r'<p class="intro">.*?</p>','<p class="intro">The same basketball engine, with a new 3D chibi presentation. Ten articulated characters, individual hairstyles, team uniforms, animated dribbles, drives and above-the-rim finishes. Switch cameras, slow down the action, or replay any possession. <b>Development preview:</b> procedural characters; alternating half-court gameplay.</p>',p,count=1)
+p=p.replace('Courtside v0.5','3D Chibi v0.6')
+p=p.replace('<script>/* AAU Dynasty', '<script>'+three+'</script><script>'+renderer+'</script><script>/* AAU Dynasty',1)
+p=p.replace("const canvas=q('canvas'),ctx=canvas.getContext('2d'),caption=q('.court-call'),score=q('[data-score]');if(!ctx)throw Error('Canvas 2D is unavailable in this browser.');", "const canvas=q('canvas'),caption=q('.court-call'),score=q('[data-score]');let view;try{view=new ChibiCourt(canvas);}catch(error){caption.textContent='3D could not start. This preview requires WebGL. '+error.message;return {broadcast,stop(){audio.close();}};}")
+p=p.replace('render(ctx,broadcast.match,{names,debug});','view.render(broadcast.match,{names,debug});')
+p=p.replace("audio.close();observer?.disconnect();", "audio.close();view.dispose();observer?.disconnect();")
+p=p.replace('<button data-do="debug">Assignments: off</button>', '<button data-do="camera">Camera: broadcast</button>')
+p=p.replace("case'debug':debug=!debug;b.textContent='Assignments: '+(debug?'on':'off');break;", "case'camera':view.view=(view.view+1)%3;view.setCamera();b.textContent='Camera: '+['broadcast','courtside','tactical'][view.view];break;")
+p=p.replace('placeholder characters · no season rewards','procedural 3D chibi characters · no season rewards')
+p=p.replace('Animated five-on-five basketball possession','Animated 3D five-on-five basketball possession')
+Path('chibi/index.html').write_text(p)
+# Export pure engine and sample teams for deterministic verification.
+scripts=re.findall(r'<script>(.*?)</script>',Path('chibi/base.html').read_text(),re.S)
+Path('chibi/engine.cjs').write_text(scripts[0])
+line=scripts[1]; teams=line[line.index('[{'):line.rindex(']')+1];Path('chibi/teams.json').write_text(teams)

@@ -32,7 +32,8 @@
    "Basketball IQ": 94
   },
   "ratingsMethod": "Provisional game ratings, not published scouting grades. Profile details supplied by the coach; measurements may have changed.",
-  "photo": null
+  "photo": null,
+  "team": "Mamba Black"
  },
  {
   "id": "custom-harley-hudson",
@@ -67,7 +68,8 @@
    "Basketball IQ": 85
   },
   "ratingsMethod": "Provisional game ratings, not published scouting grades. Profile details supplied by the coach; measurements may have changed.",
-  "photo": null
+  "photo": null,
+  "team": "Mamba Black"
  },
  {
   "id": "custom-donovan-price",
@@ -102,7 +104,8 @@
    "Basketball IQ": 80
   },
   "ratingsMethod": "Provisional game ratings, not published scouting grades. Position is a temporary gameplay assignment pending coach confirmation.",
-  "photo": null
+  "photo": null,
+  "team": "Mamba Black MADE"
  },
  {
   "id": "custom-derrick-tarver-jr",
@@ -137,6 +140,1182 @@
    "Basketball IQ": 80
   },
   "ratingsMethod": "Provisional game ratings, not published scouting grades. Position is a temporary gameplay assignment pending coach confirmation.",
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-jerimiah",
+  "name": "Jerimiah",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "J",
+   "number": 5,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-andrew",
+  "name": "Andrew",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "A",
+   "number": 7,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-jahleel",
+  "name": "Jahleel",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "J",
+   "number": 9,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-true",
+  "name": "True",
+  "classYear": 0,
+  "position": "PG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "T",
+   "number": 11,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-landon",
+  "name": "Landon",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "L",
+   "number": 13,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-odyn",
+  "name": "Odyn",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "O",
+   "number": 15,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-xander",
+  "name": "Xander",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "X",
+   "number": 17,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-lucas",
+  "name": "Lucas",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "L",
+   "number": 19,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-niaz",
+  "name": "Niaz",
+  "classYear": 0,
+  "position": "PG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mamba Black MADE",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "N",
+   "number": 21,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-liam",
+  "name": "Liam",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "L",
+   "number": 23,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-mikey",
+  "name": "Mikey",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "M",
+   "number": 25,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-chikai",
+  "name": "Chikai",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "C",
+   "number": 27,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-jace",
+  "name": "Jace",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "J",
+   "number": 29,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-marquis",
+  "name": "Marquis",
+  "classYear": 0,
+  "position": "PG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "M",
+   "number": 31,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-los",
+  "name": "Los",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "L",
+   "number": 33,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-ant",
+  "name": "Ant",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "A",
+   "number": 35,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-mei-lynn",
+  "name": "Mei Lynn",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "ML",
+   "number": 37,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-hisham",
+  "name": "Hisham",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "H",
+   "number": 39,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-cotrell",
+  "name": "Cotrell",
+  "classYear": 0,
+  "position": "PG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "C",
+   "number": 41,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-malikai",
+  "name": "Malikai",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "M",
+   "number": 43,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-brett",
+  "name": "Brett",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold Made",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "B",
+   "number": 45,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-ayan",
+  "name": "Ayan",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "A",
+   "number": 47,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-austin",
+  "name": "Austin",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Gold",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "A",
+   "number": 49,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-gabe",
+  "name": "Gabe",
+  "classYear": 0,
+  "position": "PG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Red",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "G",
+   "number": 51,
+   "hue": 86,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-dom",
+  "name": "Dom",
+  "classYear": 0,
+  "position": "SF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Red",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "D",
+   "number": 53,
+   "hue": 198,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-kingston",
+  "name": "Kingston",
+  "classYear": 0,
+  "position": "C",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Red",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "K",
+   "number": 55,
+   "hue": 286,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-xavier",
+  "name": "Xavier",
+  "classYear": 0,
+  "position": "SG",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Red",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "X",
+   "number": 2,
+   "hue": 18,
+   "generated": true
+  },
+  "photo": null
+ },
+ {
+  "id": "custom-mambas-matthew",
+  "name": "Matthew",
+  "classYear": 0,
+  "position": "PF",
+  "school": "Mambas United",
+  "hometown": null,
+  "height": "Not reported",
+  "weight": null,
+  "commitment": {
+   "status": "Not reported",
+   "school": null,
+   "date": null
+  },
+  "rankings": [],
+  "sourceSnapshots": [],
+  "coverage": [
+   "Mambas United Trello roster"
+  ],
+  "isCustom": true,
+  "isFictional": false,
+  "team": "Mambas Red",
+  "archetype": "Custom Prospect",
+  "signatureAbility": "To be assigned",
+  "bio": "Real Mambas United roster name imported from the coach's Trello board. Player details pending coach confirmation.",
+  "gameRatings": {
+   "Ball Handling": 80,
+   "Athleticism": 80,
+   "Shooting": 80,
+   "Defense": 80,
+   "Bag Work": 80,
+   "Basketball IQ": 80
+  },
+  "ratingsMethod": "Provisional game ratings for gameplay only; not scouting grades.",
+  "avatar": {
+   "initials": "M",
+   "number": 4,
+   "hue": 86,
+   "generated": true
+  },
   "photo": null
  }
 ]

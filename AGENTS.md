@@ -26,3 +26,14 @@ Complete authorized technical work. Explain one transferable concept at meaningf
 Onboarding is local-only: no live data mutations, production migrations, pack openings, Git pushes or deployments. Future tasks must establish their release scope; do not treat a local test as publication authorization. Preserve the existing restricted audience. A request to inspect the live game does not authorize changing its saves.
 
 At milestones update the HQ status with exact artifact locations, checks, limitations and next action. Keep code/engineering documentation in this repository; HQ holds pointers and coordination. Do not duplicate the repository inside HQ.
+
+## Leon handoff links
+
+- After every code update, include a clickable local preview link in the chat: `[Try the local preview](http://127.0.0.1:8790/)`.
+- When the change affects a specific screen or route, include that route as a second clickable link when available (for example, the Chibi court entry).
+- Include clickable links to the main changed source files using absolute repository paths, plus a brief verification summary. Do not claim the link is live or deployed unless publication was explicitly authorized and verified.
+- If the local preview server is not running, start it for verification or clearly say that the link requires the user to run the documented local start command.
+
+## Selected gameplay — October 30, 2026
+
+Read `GAMEPLAY-SOURCE.md` before gameplay work. Leon selected the original ten-player 3D Chibi v0.6. The master remains this repository; cloud snapshots are references. Preserve the 5-on-5 entry and imported source. Do not substitute the optional 3-on-3 exhibition or claim the 12-possession preview is already a full season engine.

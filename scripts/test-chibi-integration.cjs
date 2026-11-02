@@ -1,0 +1,22 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),source=fs.readFileSync(path.join(root,'public/chibi-integration.js'),'utf8');
+const samples=require('../gameplay/chibi/teams.json'),{Match,Broadcast,validateResult}=require('../gameplay/chibi/engine.cjs');
+const players=Array.from({length:16},(_,i)=>({id:'p'+i,n:'Player '+i,p:'G',s:60+i,pa:70,d:70,q:70,a:80,catalog:{isFictional:true,position:'PG'}}));
+const S={pick:players.slice(0,8).map(p=>p.id),five:['p3','p2','p1','p0','p4'],team:0};
+let stopped=0,framed=0;
+const context={S,players,player:id=>{const p=players.find(p=>p.id===id);return p?{...p,s:p.s+2}:null;},programs:[{n:'Test Program'}],frame:()=>framed++,home:()=>{},console};
+vm.createContext(context);vm.runInContext(source,context);
+const before=JSON.stringify({S,players});const teams=JSON.parse(JSON.stringify(context.chibiTeams(samples)));
+assert.deepEqual(teams[0].players.map(p=>p.id),S.five);assert.equal(teams[0].players[0].s,65);
+assert.equal(new Set(teams.flatMap(t=>t.players.map(p=>p.id))).size,10);
+const match=new Match(teams,42);for(let i=0;i<5000&&!match.done;i++)match.step(1/60);assert(match.done);assert.equal(match.actors.length,10);
+assert.equal(JSON.stringify({S,players}),before,'simulation must not change roster or saves');
+const broadcast=new Broadcast(teams,42,12);while(!broadcast.complete){for(let i=0;i<5000&&!broadcast.live.done;i++)broadcast.step(1/60);broadcast.record();if(!broadcast.complete)broadcast.next();}
+const result=broadcast.result();assert.equal(result.version,1);assert.equal(result.possessions,12);assert.equal(result.teams.flatMap(t=>t.players).length,10);assert(validateResult(result,teams).ok,'completed match result validates');
+const broken=JSON.parse(JSON.stringify(result));broken.teams[0].players[0].points+=1;assert.equal(validateResult(broken,teams).ok,false,'tampered result is rejected');
+S.five=['missing','p1','p1'];assert.equal(context.chibiTeams(samples)[0].players.length,5);
+S.pick=['p1'];const fallback=context.chibiTeams(samples);assert.equal(JSON.stringify(fallback),JSON.stringify(samples));fallback[0].players[0].name='Changed';assert.notEqual(samples[0].players[0].name,'Changed');
+context.session={stop:()=>stopped++};vm.runInContext('chibiSession=session;frame("away");frame("again");',context);assert.equal(stopped,1);assert.equal(framed,2);
+const html=fs.readFileSync(path.join(root,'public/chibi-v0.6/index.html'),'utf8');assert(html.includes('if(window.parent===window)'));assert(html.includes('new ChibiCourt(canvas)'));
+assert(fs.readFileSync(path.join(root,'game.html'),'utf8').includes('/chibi-integration.js'));
+console.log('PASS: ten unique players, starter order, current ratings, roster fallback, state isolation, cleanup, and packaged 3D entry.');

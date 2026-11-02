@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Mambas United",
+    "players": [
+      {"id":"custom-tiger-stancil","name":"Tiger Stancil","position":"PG","gameRatings":{"Ball Handling":93,"Athleticism":84,"Shooting":88,"Defense":80,"Basketball IQ":94},"avatar":{"number":30}},
+      {"id":"dyn-2027-001","name":"Tobias Ingram","position":"CG","gameRatings":{"Ball Handling":99,"Athleticism":87,"Shooting":95,"Defense":91,"Basketball IQ":99},"avatar":{"number":31}},
+      {"id":"dyn-2027-002","name":"Ezra Jeffries","position":"SF","gameRatings":{"Ball Handling":85,"Athleticism":97,"Shooting":95,"Defense":94,"Basketball IQ":96},"avatar":{"number":25}},
+      {"id":"dyn-2027-003","name":"Orion Galloway","position":"CG","gameRatings":{"Ball Handling":95,"Athleticism":86,"Shooting":87,"Defense":95,"Basketball IQ":94},"avatar":{"number":13}},
+      {"id":"custom-harley-hudson","name":"Harley Hudson","position":"C","gameRatings":{"Ball Handling":76,"Athleticism":94,"Shooting":73,"Defense":89,"Basketball IQ":85},"avatar":{"number":44}}
+    ]
+  },
+  {
+    "name": "Circuit Select",
+    "players": [
+      {"id":"dyn-2027-021","name":"Micah Yoon","position":"PG","gameRatings":{"Ball Handling":96,"Athleticism":90,"Shooting":83,"Defense":90,"Basketball IQ":89},"avatar":{"number":12}},
+      {"id":"dyn-2027-022","name":"Paxton Bellamy","position":"SG","gameRatings":{"Ball Handling":92,"Athleticism":88,"Shooting":95,"Defense":84,"Basketball IQ":90},"avatar":{"number":21}},
+      {"id":"dyn-2027-023","name":"Anthony Barlow","position":"PF","gameRatings":{"Ball Handling":78,"Athleticism":91,"Shooting":97,"Defense":94,"Basketball IQ":90},"avatar":{"number":33}},
+      {"id":"dyn-2027-024","name":"Alonzo Galloway","position":"PF","gameRatings":{"Ball Handling":78,"Athleticism":93,"Shooting":93,"Defense":96,"Basketball IQ":94},"avatar":{"number":32}},
+      {"id":"dyn-2027-025","name":"Nehemiah Umeh","position":"PF","gameRatings":{"Ball Handling":81,"Athleticism":87,"Shooting":92,"Defense":96,"Basketball IQ":93},"avatar":{"number":14}}
+    ]
+  }
+]

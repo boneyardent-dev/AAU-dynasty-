@@ -56,3 +56,39 @@
 .aau-r-legendary .aau-rib i{color:#5a3a0a}
 .aau-r-mythic{--a:#ff5fc8;--b:#7a6bff;--dark:#4a1450;--glow:#ffd0f0;--ribbon:#e0409f}
 .aau-rar{position:absolute;right:3.4cqw;top:12cqw;padding:.8cqw 3cqw;border-radius:99cqw;background:rgba(10,8,30,.62);border:.5cqw solid var(--glow);font:italic 800 4.4cqw/1.1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+
+/* Collectible rarity is independent of OVR and illustration version. */
+.aau-card[class*="aau-r-"] .aau-rar{top:5cqw;right:4cqw;max-width:54cqw;border-radius:1cqw;padding:2cqw 3cqw;font:900 5.5cqw/1.1 system-ui,sans-serif;letter-spacing:.04em;background:var(--dark);border:.6cqw solid var(--glow);box-shadow:0 2cqw 5cqw #0006}
+.aau-tier-mark{position:absolute;right:7cqw;top:20cqw;font:900 15cqw/1 system-ui,sans-serif;text-align:center;color:var(--glow);text-shadow:0 1cqw 3cqw #000}
+.aau-tier-mark small{display:block;font:800 4cqw/1.5 system-ui,sans-serif;letter-spacing:.15em}
+.aau-card[class*="aau-r-"] .aau-crown{top:42cqw;right:10cqw;width:9cqw;fill:var(--glow)}
+.aau-card[class*="aau-r-"] .aau-plate{height:57cqw;padding:11cqw 3cqw 0;background:linear-gradient(160deg,var(--dark),#080c17);border:0}
+.aau-edition{font:800 4cqw/1.4 system-ui,sans-serif;letter-spacing:.08em;color:var(--glow);margin:1cqw 0 2cqw}
+.aau-finish{font:800 3.8cqw/1.2 system-ui,sans-serif;letter-spacing:.14em;color:var(--glow);margin-top:3cqw}
+.aau-card[class*="aau-r-"] .aau-rib{background:var(--ribbon);box-shadow:none;padding:1.2cqw 3cqw;max-width:100%}
+.aau-card[class*="aau-r-"] .aau-rib i{font-size:5cqw;color:#fff;text-shadow:none;overflow:hidden;text-overflow:ellipsis}
+.aau-card.aau-r-legendary .aau-rib i{color:#241600}
+.aau-card.aau-r-common .aau-foil{background:#748391;animation:none;opacity:1;mix-blend-mode:normal}
+.aau-card.aau-r-common .aau-holo,.aau-card.aau-r-common .aau-glare,.aau-card.aau-r-common .aau-art:after{display:none}
+.aau-card.aau-r-common .aau-front{box-shadow:0 12px 24px #0005;border:1px solid #96a3ae}
+.aau-card.aau-r-uncommon .aau-foil{background:repeating-linear-gradient(135deg,#164b35 0 12px,#75d9a6 12px 14px,#2e8a5b 14px 26px);animation:none;opacity:1;mix-blend-mode:normal}
+.aau-card.aau-r-uncommon .aau-holo,.aau-card.aau-r-uncommon .aau-art:after{display:none}
+.aau-card.aau-r-uncommon .aau-front{box-shadow:0 12px 24px #0005;border:1px solid #75d9a6}
+.aau-card.aau-r-rare .aau-foil{background:linear-gradient(125deg,#164987,#d9f4ff 30%,#4089ce 48%,#e4faff 52%,#1c609b 75%);background-size:220% 220%;animation:aau-foil 9s linear infinite;opacity:1;mix-blend-mode:normal}
+.aau-card.aau-r-rare .aau-holo{opacity:.14}.aau-card.aau-r-rare .aau-art:after{display:none}
+.aau-card.aau-r-rare .aau-front{box-shadow:0 0 12px #59acff44,0 12px 24px #0006}
+.aau-card.aau-r-epic .aau-foil{background:repeating-conic-gradient(from 20deg,#48206a 0deg 35deg,#c28aff 35deg 55deg,#efadf4 55deg 70deg,#6b27a5 70deg 90deg);opacity:1;mix-blend-mode:normal;animation:none}
+.aau-card.aau-r-epic .aau-front{box-shadow:0 0 22px #ac68ff66,0 12px 24px #0007;border:1px solid #d7a2ff}
+.aau-card.aau-r-legendary .aau-foil{background:repeating-linear-gradient(45deg,#704811 0 3px,#d5a843 3px 5px,#ffe8a1 5px 6px,#b67c22 6px 12px);opacity:1;mix-blend-mode:normal;animation:none}
+.aau-card.aau-r-legendary .aau-art{inset:4.5cqw;outline:1cqw double #ffe3a1}
+.aau-card.aau-r-legendary .aau-front{box-shadow:0 0 25px #e8b44277,0 15px 32px #0009;border:2px solid #ffe4a0}
+.aau-card.aau-r-legendary .aau-holo{background:linear-gradient(115deg,transparent,#ffe5a080,transparent);opacity:.4}
+.aau-card.aau-r-mythic{--a:#ad77ff;--b:#5ff6ee;--dark:#22103d;--glow:#e1faff;--ribbon:#6035a0}
+.aau-card.aau-r-mythic .aau-foil{background:conic-gradient(from 30deg,#7ef9e8,#9970ff,#ff9ee9,#fff2c4,#73f7ed,#9970ff,#7ef9e8);background-size:220% 220%;animation:aau-foil 7s linear infinite;opacity:1;mix-blend-mode:normal}
+.aau-card.aau-r-mythic .aau-front{border:2px solid #c1fff9;box-shadow:0 0 22px #72fff36b,0 0 42px #a976ff66,0 15px 32px #0009}
+.aau-card.aau-r-mythic .aau-art:after{content:'';position:absolute;inset:0;opacity:.45;background-image:radial-gradient(circle,#fff 0 1px,transparent 2px);background-size:17px 29px;pointer-events:none}
+.aau-card[data-static]{cursor:default}.aau-card[data-static] .aau-tilt,.aau-card[data-static] .aau-inner{transform:none}
+.aau-rarity-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.aau-rarity-gallery section{background:#101827;border:1px solid #344154;border-radius:14px;padding:16px}.aau-rarity-gallery h2{font-size:22px;margin:0}.aau-rarity-gallery p{font-size:13px;color:#d5e0ec}.aau-rarity-gallery .aau-card{max-width:230px}
+@media(max-width:700px){.aau-rarity-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.aau-rarity-gallery section{padding:9px}.aau-rarity-gallery h2{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.aau-card[class*="aau-r-"] .aau-foil{animation:none}}
+.aau-ovr-label{position:absolute;left:0;right:0;top:28cqw;text-align:center;color:#fff;font:800 3cqw/1 system-ui,sans-serif;letter-spacing:.15em}

@@ -381,3 +381,18 @@
 @media(max-width:700px){.pr-summary-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(210px,65vw,270px);overflow-x:auto;scroll-snap-type:x proximity;gap:14px;padding:4px 2px 14px;overscroll-behavior-x:contain}.pr-summary-card{scroll-snap-align:start;padding:10px}.pr-summary-card .pr-silver-card{padding:8px}.pr-summary-card .player-photo-frame,.pr-summary-card .portrait-initials,.pr-summary-card .fictional-portrait,.pr-summary-card .portrait{height:145px}.pr-summary-card .pr-silver-card h3{font-size:20px}.pr-summary-card .card-ovr{font-size:23px}.pr-summary-card .card-pos{font-size:9px}.pr-summary-card .small{font-size:9px}.pr-summary-card .six-stats span{font-size:9px;padding:5px}.pr-summary-card .six-stats b{font-size:13px}.pr-summary-card .pr-summary-player{font-size:13px}.pr-summary-card .pr-summary-detail,.pr-summary-card .pr-summary-rarity{font-size:9px}.pr-summary-card .pr-favorite{font-size:10px;min-height:44px}}
 
 .pr-summary-hint{display:none}@media(max-width:700px){.pr-summary-hint{display:block;color:#c3d3e7;font-size:12px;text-align:left;margin:0 0 12px}}
+
+/* The reveal and collection now share the same six collectible card fronts. */
+.pr-edition-card{width:100%;margin:0;padding:0;background:transparent;border:0}
+.pr-edition-card .aau-card{max-width:none}
+.pr-pull-card .pr-edition-card{height:100%}.pr-pull-card .aau-card{height:100%;aspect-ratio:auto}
+.pr-dialog-card:has(.pr-edition-card){width:min(100%,260px)}
+.pr-summary-card{background:#101827;color:#f0f5ff;border-color:var(--reveal);box-shadow:0 12px 26px #0008}
+.pr-summary-card:after{display:none}.pr-summary-card.pr-tier-common,.pr-summary-card.pr-tier-uncommon{box-shadow:0 12px 26px #0008}
+.pr-summary-rarity{font-size:10px;color:#edf6ff;padding:4px 0 8px 25px;letter-spacing:.04em}
+.pr-summary-player,.pr-summary-detail{color:#edf6ff}.pr-summary-detail{font-size:10px}.pr-summary-player{font-size:12px}
+.pr-pull-wrap.is-revealed .pr-card-side-front{filter:none}
+.pr-pull-wrap.pr-tier-legendary.is-revealed .pr-card-side-front{filter:drop-shadow(0 0 12px #ffcc5b66)}
+.pr-pull-wrap.pr-tier-mythic.is-revealed .pr-card-side-front{filter:drop-shadow(0 0 16px #b392ff88)}
+.pr-edition-stats{display:none}.pr-dialog-card .pr-edition-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-top:8px}.pr-edition-stats span{background:#102033;border:1px solid #3b526d;border-radius:4px;padding:4px;color:#dce8f5;font-size:9px}.pr-edition-stats b{display:block;font-size:14px;color:#fff}
+.pr-win-dialog .pr-card-turn:has(.pr-edition-card){width:min(100%,260px,max(170px,calc((100svh - 310px)*.48)));margin-inline:auto}

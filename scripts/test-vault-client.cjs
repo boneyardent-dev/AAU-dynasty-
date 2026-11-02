@@ -10,6 +10,7 @@ run(`function inventoryRead(){const raw=localStorage.getItem(collectionKey);retu
 async function inventoryChange(fn){const c=inventoryRead(),r=fn(c);localStorage.setItem(collectionKey,JSON.stringify(c));return r}
 async function prCommitFiveCards(){__local('open')}async function collectPackBatch(){await inventoryChange(c=>{c.last=null});__local('collect')}
 async function toggleCardFavorite(key){await inventoryChange(c=>{c.inventory[key].favorite=!c.inventory[key].favorite});__local('fav')}
+async function prFavorite(key){await inventoryChange(c=>{c.inventory[key].favorite=!c.inventory[key].favorite});__local('summary-fav')}
 async function purchaseFeaturedPack(){__local('shop')}`);
 ctx.__local=n=>local.push(n);
 vm.runInContext(fs.readFileSync(root+'public/retention.js','utf8').replace(/const RT_/g,'var RT_'),ctx);
@@ -30,13 +31,33 @@ const vault=(o={})=>({packs:3,matches:7,packThemes:[],last:null,cards:[{cardKey:
  local=[];const batch={batchId:'B1',themeId:'t',bonusSupport:'scout',cards:[{pullId:'p1',playerId:'a',rarity:'Legendary',specialEdition:'PEACH JAM ELITE',cardKey:'a:silver-foil:Legendary'},{pullId:'p2',playerId:'b',rarity:'Common',specialEdition:null,cardKey:'b:silver-foil:Common'}]};
  post.open={body:{vault:vault({packs:2,last:batch,cards:[{cardKey:'a:silver-foil:Legendary',playerId:'a',rarity:'Legendary',quantity:1,favorite:false,specialEdition:'PEACH JAM ELITE'}]})}};
  await run('prCommitFiveCards()');c=JSON.parse(ls.col);assert.equal(local.length,0,'no local draw when signed in');assert.equal(c.packs,2);assert.equal(c.last.batchId,'B1');assert.equal(c.last.cards[0].revealed,false);assert.equal(c.support.scout,1,'bonus support added once');
+ await run('prCommitFiveCards()');assert.equal(JSON.parse(ls.col).support.scout,1,'replayed successful open cannot grant support twice');
+ assert.deepEqual(JSON.parse(ls.col).vaultBonusReceipts,['B1'],'bonus receipt is saved with the account collection');
+
  assert(calls.some(x=>x[0]==='post'&&/PEACH JAM ELITE/.test(x[3])),'news post for a Legendary pull');
  // hydrating in the middle of a reveal keeps reveal progress and does not add support again
  await run(`inventoryChange(c=>{c.last.cards[0].revealed=true})`);get={status:200,body:{vault:vault({packs:2,last:batch})}};await run('vaultHydrate()');c=JSON.parse(ls.col);assert.equal(c.last.cards[0].revealed,true);assert.equal(c.support.scout,1);
  // server refusal is shown, collect clears the batch on the server, favorites sync
  post.open={ok:false,status:409,body:{error:'Play more games to earn a pack.'}};await run('prCommitFiveCards()');assert(/Play more games/.test(alerts.at(-1)));
- post.collect={body:{vault:vault({packs:2,last:null})}};await run('collectPackBatch()');assert.equal(JSON.parse(ls.col).last,null);assert(posts.some(p=>p.action==='collect'));
+
+ const beforeFailedCollect=ls.col;post.collect={ok:false,status:503,body:{error:'Test connection interrupted'}};
+ await run('collectPackBatch()');assert.equal(ls.col,beforeFailedCollect,'failed finish retains the complete saved summary');
+ assert.equal(run('PR.collecting'),false);assert.equal(run('aauVault.collecting'),false);assert(/rewards are safe/.test(alerts.at(-1)));
+ post.collect={body:{vault:vault({packs:2,last:null})}};const collectPosts=posts.filter(p=>p.action==='collect').length;
+ await Promise.all([run('collectPackBatch()'),run('collectPackBatch()')]);assert.equal(posts.filter(p=>p.action==='collect').length,collectPosts+1,'concurrent finish taps send one request');
+assert.equal(JSON.parse(ls.col).last,null);assert(posts.some(p=>p.action==='collect'));
  post.favorite={body:{vault:vault()}};await run(`toggleCardFavorite('a:silver-foil:Epic')`);assert(posts.some(p=>p.action==='favorite'&&p.cardKey==='a:silver-foil:Epic'&&p.value===false));
+ // The summary star must use the same server route as the collection star.
+ run('S.screen="packs"');const favoritePosts=posts.filter(p=>p.action==='favorite').length;
+ await Promise.all([run("prFavorite('a:silver-foil:Epic')"),run("prFavorite('a:silver-foil:Epic')")]);
+ assert.equal(posts.filter(p=>p.action==='favorite').length,favoritePosts+1,'summary repeated taps are serialized');
+ assert.equal(JSON.parse(ls.col).inventory['a:silver-foil:Epic'].favorite,true);
+ assert(posts.some(p=>p.action==='favorite'&&p.value===true),'summary favorite is sent to the server');
+ get={status:200,body:{vault:vault()}};await run('vaultHydrate()');assert.equal(JSON.parse(ls.col).inventory['a:silver-foil:Epic'].favorite,true,'summary favorite survives server refresh');
+ post.favorite={ok:false,status:503,body:{error:'Test offline'}};await run("prFavorite('a:silver-foil:Epic')");
+ assert.equal(JSON.parse(ls.col).inventory['a:silver-foil:Epic'].favorite,true,'failed favorite keeps the confirmed state');assert.equal(run('aauVault.favoriteBusy.size'),0,'favorite retry guard releases on failure');
+ post.favorite={body:{vault:vault()}};
+
  // rewards come from the server
  post.daily={body:{granted:2,streak:3,vault:vault({packs:5})}};const d=await run('rtClaimDaily()');assert.deepEqual([d.pk,d.streak],[2,3]);assert.equal(JSON.parse(ls.col).packs,5);
  post.daily={body:{granted:0,streak:3,vault:vault({packs:5})}};assert.equal(await run('rtClaimDaily()'),null,'already claimed');
