@@ -40,13 +40,13 @@ Drive is the shared library for art references, source archives, design notes, a
 
 ## GitHub consolidation status
 
-Repository inspection on November 1, 2026 found:
+Repository inspection and push verification on November 1, 2026 found:
 
 - `Smackgod/AAU-DYNASTY`: private placeholder; its README says the playable source has not been migrated. Do not use it as the canonical source without an explicit migration decision.
-- `boneyardent-dev/AAU-dynasty-`: empty repository; current connection has pull access only, not push/admin access.
-- This checkout currently has no Git remote configured.
+- `boneyardent-dev/AAU-dynasty-`: the owner-controlled canonical GitHub repository. Its `main` branch now contains commit `f09ea96`.
+- This checkout has the `origin` remote configured as `https://github.com/boneyardent-dev/AAU-dynasty-.git` and tracks `origin/main`.
 
-Therefore the source is consolidated locally, but GitHub consolidation is not complete. The next authorized step is to identify or create the intended owner-controlled repository, grant write access, add it as the remote, push the reviewed history, and verify the default branch. Do not push to either discovered repository by assumption.
+Therefore the canonical source is consolidated locally and on GitHub. Future pushes still require task-specific authorization; do not push unrelated archives, screenshots, duplicate exports, or cloud-chat references by assumption.
 
 ## Preservation boundary
 
