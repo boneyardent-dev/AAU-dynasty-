@@ -2,6 +2,13 @@
 
 This repository is AAU Dynasty: Circuit Originals, a game project separate from House of Hooperz. Extend the existing game rather than creating a replacement demo.
 
+## Canonical source and chat continuity
+
+- This checkout and the GitHub repository [boneyardent-dev/AAU-dynasty-](https://github.com/boneyardent-dev/AAU-dynasty-) are the same canonical AAU Dynasty source. The `main` branch is the shared continuity point.
+- This rule applies whether work begins in the Codex desktop app, an AAU Dynasty project chat, or an app-based workflow. New chats must open this repository and read these instructions before proposing a new game or source tree.
+- Start by checking `git status`, the current branch, and the `origin` remote. Use the existing source and history; do not recreate the game from a prompt, screenshot, ZIP archive, cloud snapshot, or older chat when the canonical repository is available.
+- Keep archives, screenshots, duplicate exports, and cloud-chat references as references unless a task explicitly promotes a specific item into the canonical source. Push reviewed project changes to `main` only when the task explicitly authorizes the release.
+
 ## Start here
 
 - Read `/Users/leonstancil/Documents/Leon-Work-HQ/Games/AAU-Dynasty/PROJECT-BRIEF.md` and `STATUS.md` for current product context and verification evidence. If those files are unavailable in a future environment, report that limitation rather than assume their contents.
