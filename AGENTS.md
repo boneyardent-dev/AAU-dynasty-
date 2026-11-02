@@ -36,6 +36,7 @@ At milestones update the HQ status with exact artifact locations, checks, limita
 
 ## Leon handoff links
 
+- After every update, include a clickable, verified link in the chat to the relevant result. Use the local preview for local changes, the GitHub repository or changed file for source changes, and the deployed game only when publication was explicitly authorized and verified. Label the link as local, GitHub, or deployed.
 - After every code update, include a clickable local preview link in the chat: `[Try the local preview](http://127.0.0.1:8790/)`.
 - When the change affects a specific screen or route, include that route as a second clickable link when available (for example, the Chibi court entry).
 - Include clickable links to the main changed source files using absolute repository paths, plus a brief verification summary. Do not claim the link is live or deployed unless publication was explicitly authorized and verified.
