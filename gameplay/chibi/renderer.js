@@ -17,7 +17,8 @@ class ChibiCourt {
  court(){
  const T=THREE;this.box(this.scene,9.75,-.18,6.5,22,.3,15.4,'#263746').renderOrder=-30;
  for(let row=0;row<38;row++)for(let col=0;col<11;col++){let x=col*1.95+(row%2)*.975;const w=Math.min(1.93,19.5-x);if(w>0)this.box(this.scene,x+w/2,-.025,row*.342+.17,w,.05,.332,['#b27e4d','#c5915e','#d3a16d','#bc8a59'][(row*3+col*7)%4]).renderOrder=-20;}
- this.box(this.scene,17.25,.006,6.8,4.5,.018,4.8,'#126b63').renderOrder=-10;this.line([[0,.03,0],[19.5,.03,0],[19.5,.03,13],[0,.03,13],[0,.03,0]]);this.line([[15,.03,4.4],[19.5,.03,4.4],[19.5,.03,9.2],[15,.03,9.2],[15,.03,4.4]]);this.line([[2.6,.03,0],[2.6,.03,13]]);this.arc(2.6,6.5,1.8,0,Math.PI*2);this.arc(15,6.8,1.8,Math.PI/2,Math.PI*1.5);this.arc(18.2,6.8,5.7,Math.PI/2,Math.PI*1.5);
+ // Keep the fallback paint consistent with Mambas branding if the concept art is unavailable.
+ this.box(this.scene,17.25,.006,6.8,4.5,.018,4.8,'#741d2b').renderOrder=-10;this.line([[0,.03,0],[19.5,.03,0],[19.5,.03,13],[0,.03,13],[0,.03,0]]);this.line([[15,.03,4.4],[19.5,.03,4.4],[19.5,.03,9.2],[15,.03,9.2],[15,.03,4.4]]);this.line([[2.6,.03,0],[2.6,.03,13]]);this.arc(2.6,6.5,1.8,0,Math.PI*2);this.arc(15,6.8,1.8,Math.PI/2,Math.PI*1.5);this.arc(18.2,6.8,5.7,Math.PI/2,Math.PI*1.5);
  for(let side=0;side<2;side++)for(let row=0;row<3;row++)for(let i=0;i<35;i++){let x=i*.62-.7,z=side?14.4+row*.5:-1.3-row*.5;this.sphere(this.scene,x,.55+row*.3,z,.12,.15,.12,['#48576c','#797167','#587883'][i%3]);this.box(this.scene,x,.25+row*.3,z,.24,.35,.25,'#26364b');}
  this.applyMambasCourt();
  }
