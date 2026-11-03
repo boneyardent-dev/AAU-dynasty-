@@ -32,7 +32,7 @@ class ChibiCourt {
  try{this.renderer=new T.WebGLRenderer({canvas,antialias:true});}catch(error){this.renderer=new CourtSoftwareRenderer(canvas);}this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));this.renderer.setSize(1280,720,false);this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.3;
  this.camera=new T.PerspectiveCamera(39,1280/720,.1,100);this.views=[[23,18,22],[18,7,14],[12,25,25],[30,6,10]];this.view=0;this.spotlightActor=null;this.playerLab=false;this.setCamera();
  this.scene.add(new T.HemisphereLight(0xd6edff,0x574333,2.5));const light=new T.DirectionalLight(0xffebd0,3.5);light.position.set(10,20,8);light.castShadow=true;light.shadow.mapSize.set(2048,2048);Object.assign(light.shadow.camera,{left:-18,right:18,top:18,bottom:-18,near:.5,far:60});light.shadow.bias=-.0005;this.scene.add(light);const fill=new T.DirectionalLight(0x93caff,2);fill.position.set(-8,9,-12);this.scene.add(fill);
- this.materials={};this.people=new Map();this.court();this.scene.traverse(o=>{o.userData.staticCourt=true;});this.hoop();this.ball=this.mesh(new T.SphereGeometry(.2884,20,12),this.mat('#df7629'));this.scene.add(this.ball);
+ this.materials={};this.people=new Map();this.brandTexture=null;this.brandTexturePlane=null;this.court();this.scene.traverse(o=>{o.userData.staticCourt=true;});this.hoop();this.ball=this.mesh(new T.SphereGeometry(.2884,20,12),this.mat('#df7629'));this.scene.add(this.ball);
  const seams=new T.Group();for(let i=0;i<3;i++){const r=this.mesh(new T.TorusGeometry(.29046,.01236,4,36),this.mat('#512d1b'));r.rotation.set(i===0?Math.PI/2:0,i===1?Math.PI/2:0,i===2?.6:0);seams.add(r);}this.ball.add(seams);this.labels=true;
  }
  mat(color){return this.materials[color]||(this.materials[color]=new THREE.MeshStandardMaterial({color,roughness:.48,metalness:.04}));}
@@ -46,6 +46,20 @@ class ChibiCourt {
  for(let row=0;row<38;row++)for(let col=0;col<11;col++){let x=col*1.95+(row%2)*.975;const w=Math.min(1.93,19.5-x);if(w>0)this.box(this.scene,x+w/2,-.025,row*.342+.17,w,.05,.332,['#b27e4d','#c5915e','#d3a16d','#bc8a59'][(row*3+col*7)%4]).renderOrder=-20;}
  this.box(this.scene,17.25,.006,6.8,4.5,.018,4.8,'#126b63').renderOrder=-10;this.line([[0,.03,0],[19.5,.03,0],[19.5,.03,13],[0,.03,13],[0,.03,0]]);this.line([[15,.03,4.4],[19.5,.03,4.4],[19.5,.03,9.2],[15,.03,9.2],[15,.03,4.4]]);this.line([[2.6,.03,0],[2.6,.03,13]]);this.arc(2.6,6.5,1.8,0,Math.PI*2);this.arc(15,6.8,1.8,Math.PI/2,Math.PI*1.5);this.arc(18.2,6.8,5.7,Math.PI/2,Math.PI*1.5);
  for(let side=0;side<2;side++)for(let row=0;row<3;row++)for(let i=0;i<35;i++){let x=i*.62-.7,z=side?14.4+row*.5:-1.3-row*.5;this.sphere(this.scene,x,.55+row*.3,z,.12,.15,.12,['#48576c','#797167','#587883'][i%3]);this.box(this.scene,x,.25+row*.3,z,.24,.35,.25,'#26364b');}
+ this.applyMambasCourt();
+ }
+ applyMambasCourt(){
+  // The supplied 4:3 concept is a visual layer only. The measured lines above
+  // remain the gameplay geometry, so art cannot change bounds, scoring or bounce.
+  if(typeof document?.createElementNS!=='function')return;
+  const T=THREE,loader=new T.TextureLoader();
+  loader.load('/courts/mambas-united/v1/concept.png',(texture)=>{
+   texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=this.renderer.capabilities?.getMaxAnisotropy?.()||1;
+   const aspect=1448/1086,maxWidth=19.5,maxDepth=13,depth=Math.min(maxDepth,maxWidth/aspect),width=depth*aspect;
+   const material=new T.MeshStandardMaterial({map:texture,color:'#ffffff',transparent:true,opacity:.68,roughness:.3,metalness:.12,depthWrite:false});
+   const plane=new T.Mesh(new T.PlaneGeometry(width,depth),material);plane.rotation.x=-Math.PI/2;plane.position.set(9.75,.004,6.5);plane.renderOrder=-2;plane.userData.staticCourt=true;plane.userData.texture=texture;
+   this.scene.add(plane);this.brandTexture=texture;this.brandTexturePlane=plane;
+  },undefined,()=>{this.brandTexture=null;this.brandTexturePlane=null;});
  }
  hoop(){const T=THREE;this.box(this.scene,20.3,1.4,6.8,.15,2.8,.15,'#303947');this.box(this.scene,19.7,2.6,6.8,1.2,.12,.15,'#566577');const board=this.mesh(new T.BoxGeometry(.07,1.2,1.9),new T.MeshPhysicalMaterial({color:'#dcf3ff',transparent:true,opacity:.33,roughness:.14,metalness:.1,side:T.DoubleSide}));board.position.set(19.05,2.48,6.8);this.scene.add(board);
  this.line([[19,1.88,5.85],[19,3.08,5.85],[19,3.08,7.75],[19,1.88,7.75],[19,1.88,5.85]],'#d9e8ed',.025);this.line([[18.99,2.1,6.42],[18.99,2.65,6.42],[18.99,2.65,7.18],[18.99,2.1,7.18],[18.99,2.1,6.42]],'#ffffff',.022);
@@ -85,7 +99,7 @@ class ChibiCourt {
  }
  this.ball.position.copy(ball);this.ball.rotation.z=m.elapsed*4;this.ball.rotation.x=m.elapsed*2;const f=AAUCourt.rimFeedback(m);this.rim.position.y=2.06-f.drop*.02;this.rim.rotation.z=-f.drop*.012;this.net.scale.y=1+f.net*.025;this.net.rotation.x=f.sway*.015;this.renderer.render(this.scene,this.camera);
  }
- dispose(){this.renderer.dispose();this.scene.traverse(o=>{o.geometry?.dispose();if(o.userData.texture)o.userData.texture.dispose();});}
+ dispose(){this.renderer.dispose();this.scene.traverse(o=>{o.geometry?.dispose();if(o.userData.texture)o.userData.texture.dispose();});this.brandTexture?.dispose();}
 }
 </script><script>/* AAU Dynasty / shared HTML court component. No network, storage or reward writes. */
 (function(root){
