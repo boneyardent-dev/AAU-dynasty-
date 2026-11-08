@@ -16,4 +16,6 @@ fs.writeFileSync(path.join(target,'index.html'),source.replace(boot,()=>replacem
 fs.copyFileSync(path.join(root,'gameplay/chibi/THREE-LICENSE.txt'),path.join(target,'THREE-LICENSE.txt'));
 fs.copyFileSync(path.join(root,'gameplay/chibi/three.min.js'),path.join(target,'three.min.js'));
 fs.copyFileSync(path.join(root,'gameplay/chibi/renderer.js'),path.join(target,'renderer.js'));
+for(const filename of ['two-on-two.html','two-on-two.js','two-on-two-ui.js','software.js'])fs.copyFileSync(path.join(root,'gameplay/chibi',filename),path.join(target,filename));
+fs.copyFileSync(path.join(root,'gameplay/chibi/engine.cjs'),path.join(target,'engine.js'));
 console.log('Packaged retained ten-player Chibi v0.6');
