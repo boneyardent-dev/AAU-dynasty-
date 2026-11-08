@@ -4,7 +4,7 @@ November 8, 2026. Feature branch `feat/holy-shit-2v2`, based on `art/mambas-cour
 
 ## What can be played
 
-From the lobby choose **PLAY 2 × 2**, or open `/chibi-v0.6/two-on-two.html` in a local build. Tiger Stancil and Harley Hudson face Xander Timmerman and fictional Micah Yoon. WASD/arrows move the controlled player. J crosses over, K passes, L shoots, I dunks near the rim, and Space drives. On defense K switches and L contests. Touch screens receive a joystick and buttons. The half-court possession changes sides after a shot; first to 11 wins. The camera, sound, restart, and a recent-frame replay are optional controls.
+From the lobby choose **PLAY 2 × 2**, or open `/chibi-v0.6/two-on-two.html` in a local build. Tiger Stancil and Harley Hudson face Xander Timmerman and fictional Micah Yoon. The always-visible MOVE joystick accepts mouse and touch dragging; WASD/arrows also move the controlled player. J crosses over, K passes, L shoots, I dunks near the rim, and Space drives. On defense K switches and L contests. Touch screens receive action buttons. The half-court possession changes sides after a shot; first to 11 wins. The camera, sound, restart, and a recent-frame replay are optional controls.
 
 The same `ChibiCourt` renderer, Three.js bundle, half-court hoop and Mambas floor branch are used. The three named players have distinct proportions, faces, hairstyles, uniform numbers and provisional attributes. Their likenesses are procedural interpretations pending visual approval; Xander's existing roster record only says “Xander” with provisional 80 ratings, so the surname and tall/slim treatment apply to this review mode only. Micah is an existing fictional AAU Dynasty player.
 
